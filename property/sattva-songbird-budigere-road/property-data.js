@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "RERA Completion: 6 May 2029",
   "target_possession_date": "6 May 2029",
   "site_address": "Cheemasandra, Budigere Main Road, Off Old Madras Road, Bengaluru, Karnataka 560049",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

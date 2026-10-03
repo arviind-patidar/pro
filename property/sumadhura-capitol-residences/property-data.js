@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "Reported RERA Completion: 30 December 2027",
   "target_possession_date": "30 December 2027",
   "site_address": "Hope Farm Circle, ITPL Main Road, Whitefield, Bengaluru, Karnataka 560066",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

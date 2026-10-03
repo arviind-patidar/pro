@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "PRM/KA/RERA/1251/446/PR/250625/007869",
   "target_possession_date": "1 October 2029",
   "site_address": "Alembic City Campus, Hope Farm - Kadugodi Main Road, Whitefield Precinct, Bengaluru, Karnataka 560067",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

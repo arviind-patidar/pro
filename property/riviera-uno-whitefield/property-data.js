@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "RERA Registration Received",
   "target_possession_date": "Q4 2028",
   "site_address": "Bengaluru",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

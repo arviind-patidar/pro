@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "July 2032 \u2013 September 2033 (across 6 RERA phases)",
   "target_possession_date": "July 2032 \u2013 Sept 2033",
   "site_address": "Old Madras Road (NH75), Greater Whitefield Corridor, Bengaluru, Karnataka 560049",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

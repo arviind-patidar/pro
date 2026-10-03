@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "PRM/KA/RERA/1251/446/PR/010126/008374",
   "target_possession_date": "30 June 2030",
   "site_address": "SH 35, Varthur Main Road, Opposite Varthur Lake, Whitefield Precinct, Bengaluru, Karnataka 560087",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

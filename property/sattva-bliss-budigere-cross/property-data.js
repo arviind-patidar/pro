@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "RERA Completion: 22 August 2027",
   "target_possession_date": "22 August 2027",
   "site_address": "Budigere Cross, Off Old Madras Road (NH75), Bengaluru, Karnataka 560049",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

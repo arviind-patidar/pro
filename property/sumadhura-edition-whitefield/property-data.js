@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "Phase-I RERA Completion: 31 December 2029",
   "target_possession_date": "31 December 2029",
   "site_address": "Siddapura, Core Whitefield, Bengaluru, Karnataka 560066",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

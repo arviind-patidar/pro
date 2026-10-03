@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "Phase IV: PRM/KA/RERA/1251/446/PR/310328 (Timeline Reconciliation Required)",
   "target_possession_date": "March 2028 (RERA Phase IV) / Dec 2027 (Builder Page)",
   "site_address": "Borewell Road, Core Whitefield, Bengaluru, Karnataka 560066",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

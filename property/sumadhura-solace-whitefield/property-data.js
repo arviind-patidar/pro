@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "PRM/KA/RERA/1251/446/PR/111225/008330",
   "target_possession_date": "December 2029",
   "site_address": "Sy.No 31/3, 32/3, 48/2A, 48/3 & 48/4 of Thubarahalli Village, Varthur Hobli, Marathahalli Main Road, Bangalore-East, Bengaluru",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",

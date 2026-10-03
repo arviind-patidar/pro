@@ -14,6 +14,7 @@ window.PROPERTY_DATA = {
   "rera_primary_id": "RERA Completion Target: 31 March 2031",
   "target_possession_date": "31 March 2031",
   "site_address": "NH75 / Budigere Main Road, Budigere Cross, Bengaluru, Karnataka 560049",
+  "reviewer_name": "Gaurav Mongia",
   "phases": [
     {
       "row_flag": "LIVE",
