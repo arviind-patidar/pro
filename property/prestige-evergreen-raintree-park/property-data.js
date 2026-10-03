@@ -220,6 +220,46 @@ window.PROPERTY_DATA = {
       "score": "4.31",
       "explanation": "Clear land titles with full K-RERA regulatory approval."
     }
-  ]
+  ],
+  "floor_plans": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "unit_variant_id": "evergreen-1bhk-type-a",
+      "floor_plan_id": "fp_evergreen-1bhk",
+      "typology_name": "1 BHK Type A",
+      "view_mode": "2d",
+      "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-a.webp",
+      "carpet_sqft": "659 sq.ft.",
+      "sbua_sqft": "976 sq.ft.",
+      "price_estimate": "\u20b91.07 Cr"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "unit_variant_id": "evergreen-2bhk-type-b",
+      "floor_plan_id": "fp_evergreen-2bhk",
+      "typology_name": "2 BHK Type B1",
+      "view_mode": "2d",
+      "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-b1.webp",
+      "carpet_sqft": "1,150 sq.ft.",
+      "sbua_sqft": "1,650 sq.ft.",
+      "price_estimate": "\u20b91.80 Cr"
+    }
+  ],
+  "gallery": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "asset_id": "img_evergreen-hero",
+      "context": "hero",
+      "category": "elevation",
+      "url": "style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp",
+      "caption": "Prestige Evergreen Swimming Pool View"
+    }
+  ],
+  "cost_lines": [],
+  "commutes": [],
+  "amenities": []
 };
 window.PROPERTY_SLUG = 'prestige-evergreen-raintree-park';

@@ -172,6 +172,11 @@ window.PROPERTY_DATA = {
       "score": "3.55",
       "explanation": "Clear land titles with full K-RERA regulatory approval."
     }
-  ]
+  ],
+  "floor_plans": [],
+  "gallery": [],
+  "cost_lines": [],
+  "commutes": [],
+  "amenities": []
 };
 window.PROPERTY_SLUG = 'brigade-belvedere-budigere-cross';

@@ -172,6 +172,96 @@ window.PROPERTY_DATA = {
       "score": "4.1",
       "explanation": "Clear land titles with full K-RERA regulatory approval."
     }
-  ]
+  ],
+  "floor_plans": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "unit_variant_id": "alembic-2bhk-type-a",
+      "floor_plan_id": "fp_alembic-2bhk",
+      "typology_name": "2 BHK Type A",
+      "view_mode": "2d",
+      "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-a.webp",
+      "carpet_sqft": "750 sq.ft.",
+      "sbua_sqft": "1,150 sq.ft.",
+      "price_estimate": "\u20b91.20 Cr"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "unit_variant_id": "alembic-3bhk-type-b",
+      "floor_plan_id": "fp_alembic-3bhk",
+      "typology_name": "3 BHK Type B",
+      "view_mode": "2d",
+      "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-b1.webp",
+      "carpet_sqft": "1,100 sq.ft.",
+      "sbua_sqft": "1,650 sq.ft.",
+      "price_estimate": "\u20b91.80 Cr"
+    }
+  ],
+  "gallery": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "asset_id": "img_alembic-hero",
+      "context": "hero",
+      "category": "elevation",
+      "url": "style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp",
+      "caption": "Alembic Cloud Forest Evening View"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "asset_id": "img_alembic-courtyard",
+      "context": "gallery",
+      "category": "amenities",
+      "url": "style-guide/assets/evergreen/prestige_evergreen_hero_clubhouse_courtyard_aerial.webp",
+      "caption": "Aerial Clubhouse & Courtyard"
+    }
+  ],
+  "cost_lines": [],
+  "commutes": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "commute_id": "com_1",
+      "destination": "Kadugodi Metro Station",
+      "category": "metro",
+      "mode": "drive",
+      "distance_km": "0.8 km",
+      "travel_time_mins": "3 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "commute_id": "com_2",
+      "destination": "ITPL Whitefield",
+      "category": "tech_park",
+      "mode": "drive",
+      "distance_km": "2.5 km",
+      "travel_time_mins": "8 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "commute_id": "com_3",
+      "destination": "Manipal Hospital Whitefield",
+      "category": "hospital",
+      "mode": "drive",
+      "distance_km": "3.1 km",
+      "travel_time_mins": "10 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "commute_id": "com_4",
+      "destination": "Nexus Shantiniketan Mall",
+      "category": "retail",
+      "mode": "drive",
+      "distance_km": "3.5 km",
+      "travel_time_mins": "12 mins"
+    }
+  ],
+  "amenities": []
 };
 window.PROPERTY_SLUG = 'alembic-cloud-forest-alembic-city';

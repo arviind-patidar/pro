@@ -100,5 +100,24 @@ function setupAcreNKeySheet() {
   ];
   comSheet.getRange(1, 1, comData.length, comData[0].length).setValues(comData);
 
-  SpreadsheetApp.getUi().alert('Success! All missing Google Sheet tabs (Reviewers_Advisors, Floor_Plans, Gallery, Cost_Lines, Commutes) have been created and populated.');
+  // 6. Setup Amenities Tab
+  let amSheet = ss.getSheetByName('Amenities');
+  if (!amSheet) {
+    amSheet = ss.insertSheet('Amenities');
+    Logger.log('Created Amenities tab.');
+  } else {
+    amSheet.clear();
+  }
+
+  const amData = [
+    ['row_flag', 'property_id', 'amenity_id', 'amenity_name', 'category', 'icon_name', 'description'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'am_1', 'Clubhouse & Lounge', 'leisure', 'home', '2,200+ sq.ft. per 100 homes clubhouse with multi-purpose halls'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'am_2', 'Temperature-Controlled Pool', 'sports', 'droplet', 'Olympic-length outdoor swimming pool and kids splash pad'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'am_3', 'Fitness Center & Gym', 'health', 'activity', 'State-of-the-art gymnasium with cardio and strength training equipment'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'am_4', 'Badminton & Squash Courts', 'sports', 'dribbble', 'Indoor wooden badminton courts and squash facilities'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'am_5', 'Landscaped Courtyards', 'nature', 'sun', '70%+ open green spaces with jogging tracks and seating pavilions']
+  ];
+  amSheet.getRange(1, 1, amData.length, amData[0].length).setValues(amData);
+
+  SpreadsheetApp.getUi().alert('Success! All missing Google Sheet tabs (Reviewers_Advisors, Floor_Plans, Gallery, Cost_Lines, Commutes, Amenities) have been created and populated.');
 }

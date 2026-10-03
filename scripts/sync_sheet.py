@@ -49,7 +49,7 @@ def load_base_template():
     with open(template_path, 'r', encoding='utf-8') as f:
         return f.read()
 
-def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, reviewers, template_html):
+def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, reviewers, floor_plans, gallery, cost_lines, commutes, amenities, template_html):
     slug = prop.get('slug') or prop.get('property_id')
     prop_id = prop.get('property_id') or slug
 
@@ -78,6 +78,11 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     prop_points = [pt for pt in content_points if pt.get('property_id') == prop_id or pt.get('property_id') == slug]
     prop_faqs = [f for f in faqs if f.get('property_id') == prop_id or f.get('property_id') == slug]
     prop_pillars = [sp for sp in score_pillars if sp.get('property_id') == prop_id or sp.get('property_id') == slug]
+    prop_fps = [fp for fp in floor_plans if fp.get('property_id') == prop_id or fp.get('property_id') == slug]
+    prop_gallery = [g for g in gallery if g.get('property_id') == prop_id or g.get('property_id') == slug]
+    prop_costs = [c for c in cost_lines if c.get('property_id') == prop_id or c.get('property_id') == slug]
+    prop_commutes = [cm for cm in commutes if cm.get('property_id') == prop_id or cm.get('property_id') == slug]
+    prop_amenities = [am for am in amenities if am.get('property_id') == prop_id or am.get('property_id') == slug]
 
     prop_dir = os.path.join(WORKSPACE_DIR, 'property', slug)
     os.makedirs(prop_dir, exist_ok=True)
@@ -105,7 +110,12 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         "glance_stats": prop_glance,
         "content_points": prop_points,
         "faqs": prop_faqs,
-        "score_pillars": prop_pillars
+        "score_pillars": prop_pillars,
+        "floor_plans": prop_fps,
+        "gallery": prop_gallery,
+        "cost_lines": prop_costs,
+        "commutes": prop_commutes,
+        "amenities": prop_amenities
     }
 
     data_js_content = f"window.PROPERTY_DATA = {json.dumps(prop_data, indent=2)};\nwindow.PROPERTY_SLUG = '{slug}';"
@@ -258,8 +268,13 @@ def main():
     score_pillars = fetch_tab('Score_Pillars')
     devs = fetch_tab('Developers')
     reviewers = fetch_tab('Reviewers_Advisors')
+    floor_plans = fetch_tab('Floor_Plans')
+    gallery = fetch_tab('Gallery')
+    cost_lines = fetch_tab('Cost_Lines')
+    commutes = fetch_tab('Commutes')
+    amenities = fetch_tab('Amenities')
 
-    print(f'[QC Sync] Fetched {len(properties)} properties, {len(score_pillars)} score pillars, {len(reviewers)} reviewers.')
+    print(f'[QC Sync] Fetched {len(properties)} properties, {len(score_pillars)} score pillars, {len(reviewers)} reviewers, {len(floor_plans)} floor plans, {len(amenities)} amenities.')
 
     template_html = load_base_template()
 
@@ -267,10 +282,14 @@ def main():
         slug = p.get('slug') or p.get('property_id')
         if not slug:
             continue
-        generate_property_page(p, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, reviewers, template_html)
+        generate_property_page(
+            p, phases, configs, glance_stats, content_points, faqs, 
+            score_pillars, devs, reviewers, floor_plans, gallery, 
+            cost_lines, commutes, amenities, template_html
+        )
 
     update_properties_catalog(properties)
-    print('[QC Sync] 100% Global Diligence Score & Reviewers Sync Complete across all property pages!')
+    print('[QC Sync] 100% Global Diligence Score, Amenities, Floor Plans & Cost Lines Sync Complete across all property pages!')
 
 if __name__ == '__main__':
     main()

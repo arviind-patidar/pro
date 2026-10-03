@@ -172,6 +172,11 @@ window.PROPERTY_DATA = {
       "score": "4.4",
       "explanation": "Clear land titles with full K-RERA regulatory approval."
     }
-  ]
+  ],
+  "floor_plans": [],
+  "gallery": [],
+  "cost_lines": [],
+  "commutes": [],
+  "amenities": []
 };
 window.PROPERTY_SLUG = 'riviera-uno-whitefield';
