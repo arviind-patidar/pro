@@ -167,7 +167,7 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
             lbl = g.get('stat_label') or ''
             glance_html_parts.append(f'<div class="prop-glance-item"><div class="prop-glance-num">{val}</div><div class="prop-glance-lbl">{lbl}</div></div>')
         new_glance_grid = '<div class="prop-glance-grid">' + ''.join(glance_html_parts) + '</div>'
-        html = re.sub(r'<div class="prop-glance-grid">.*?</div>\s*</div>', new_glance_grid + '</div>', html, flags=re.DOTALL)
+        html = re.sub(r'<div class="prop-glance-grid">.*?</section>', new_glance_grid + '\n</div>\n</section>', html, flags=re.DOTALL)
 
     # Diligence Cards Replacement (Content_Points tab)
     if prop_points:
