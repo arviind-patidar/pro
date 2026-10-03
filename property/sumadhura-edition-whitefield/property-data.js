@@ -137,6 +137,40 @@ window.PROPERTY_DATA = {
       "question": "When is the possession date for Sumadhura Edition?",
       "answer": "The target possession date for Sumadhura Edition is 31 December 2029."
     }
+  ],
+  "score_pillars": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "pillar_key": "builder_track_record",
+      "pillar_name": "Builder Track Record",
+      "score": "3.82",
+      "explanation": "Delivered projects on schedule with top construction quality."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "pillar_key": "location_potential",
+      "pillar_name": "Micro-Market Potential",
+      "score": "3.92",
+      "explanation": "Located in prime growth corridor with upcoming infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "pillar_key": "construction_quality",
+      "pillar_name": "Construction & Layout Quality",
+      "score": "3.82",
+      "explanation": "Mivan technology structure with high spatial efficiency."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "pillar_key": "legal_compliance",
+      "pillar_name": "RERA & Title Clarity",
+      "score": "4.02",
+      "explanation": "Clear land titles with full K-RERA regulatory approval."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'sumadhura-edition-whitefield';

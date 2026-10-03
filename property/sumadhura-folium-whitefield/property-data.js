@@ -137,6 +137,40 @@ window.PROPERTY_DATA = {
       "question": "When is the possession date for Sumadhura Folium?",
       "answer": "The target possession date for Sumadhura Folium is March 2028 (RERA Phase IV) / Dec 2027 (Builder Page)."
     }
+  ],
+  "score_pillars": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "pillar_key": "builder_track_record",
+      "pillar_name": "Builder Track Record",
+      "score": "4.7",
+      "explanation": "Delivered projects on schedule with top construction quality."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "pillar_key": "location_potential",
+      "pillar_name": "Micro-Market Potential",
+      "score": "4.8",
+      "explanation": "Located in prime growth corridor with upcoming infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "pillar_key": "construction_quality",
+      "pillar_name": "Construction & Layout Quality",
+      "score": "4.7",
+      "explanation": "Mivan technology structure with high spatial efficiency."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "pillar_key": "legal_compliance",
+      "pillar_name": "RERA & Title Clarity",
+      "score": "4.9",
+      "explanation": "Clear land titles with full K-RERA regulatory approval."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'sumadhura-folium-whitefield';

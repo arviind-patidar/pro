@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-acre&key Full Quality Control (QC) Site Generator & Google Sheet Sync Script
+acre&key 100% Precision QC Site Generator & Google Sheet Sync Script
 Reads published Google Sheet data (Sheet ID: 12wvofzmlim2TnsUn-g0wqFxjTMK0cYJxElP1I6CuFVQ)
-Performs 100% precision replacement on all static HTML elements so front-end matches Google Sheet 100%!
+Uses exact min-width table targeting so 6-Pillar Modal and Configurations Table populate 100% accurately!
 """
 
 import urllib.request
@@ -40,12 +40,13 @@ def fetch_tab(tab_name):
         print(f'Warning loading tab {tab_name}: {e}')
         return []
 
-def load_template_html():
+def load_base_template():
+    # Use raw clean template index.html from prestige-evergreen-raintree-park
     template_path = os.path.join(WORKSPACE_DIR, 'property', 'prestige-evergreen-raintree-park', 'index.html')
     with open(template_path, 'r', encoding='utf-8') as f:
         return f.read()
 
-def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, devs, template_html):
+def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, template_html):
     slug = prop.get('slug') or prop.get('property_id')
     prop_id = prop.get('property_id') or slug
 
@@ -68,6 +69,7 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     prop_glance = [g for g in glance_stats if g.get('property_id') == prop_id or g.get('property_id') == slug]
     prop_points = [pt for pt in content_points if pt.get('property_id') == prop_id or pt.get('property_id') == slug]
     prop_faqs = [f for f in faqs if f.get('property_id') == prop_id or f.get('property_id') == slug]
+    prop_pillars = [sp for sp in score_pillars if sp.get('property_id') == prop_id or sp.get('property_id') == slug]
 
     # Create directory
     prop_dir = os.path.join(WORKSPACE_DIR, 'property', slug)
@@ -94,7 +96,8 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         "configurations": prop_configs,
         "glance_stats": prop_glance,
         "content_points": prop_points,
-        "faqs": prop_faqs
+        "faqs": prop_faqs,
+        "score_pillars": prop_pillars
     }
 
     data_js_content = f"window.PROPERTY_DATA = {json.dumps(prop_data, indent=2)};\nwindow.PROPERTY_SLUG = '{slug}';"
@@ -145,7 +148,6 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         for g in prop_glance:
             val = g.get('stat_value') or ''
             lbl = g.get('stat_label') or ''
-            # Format nicely
             glance_html_parts.append(f'<div class="prop-glance-item"><div class="prop-glance-num">{val}</div><div class="prop-glance-lbl">{lbl}</div></div>')
         new_glance_grid = '<div class="prop-glance-grid">' + ''.join(glance_html_parts) + '</div>'
         html = re.sub(r'<div class="prop-glance-grid">.*?</div>\s*</div>', new_glance_grid + '</div>', html, flags=re.DOTALL)
@@ -167,7 +169,7 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         new_diligence_grid = '<div class="ak-diligence-4col-grid">' + ''.join(diligence_cards_html) + '</div>'
         html = re.sub(r'<div class="ak-diligence-4col-grid">.*?</div>\s*</div>', new_diligence_grid + '</div>', html, flags=re.DOTALL)
 
-    # Configurations Table Replacement
+    # 1. TARGET CONFIGURATIONS TABLE (min-width:640px)
     if prop_configs:
         config_rows = []
         for c in prop_configs:
@@ -178,21 +180,46 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
             base = c.get('base_price_range') or c.get('base_rate_psf_inr') or '-'
             onroad = c.get('on_road_estimate') or c.get('all_in_min_inr') or '-'
             config_rows.append(f'''
-              <tr>
-                <td style="padding: 12px; font-weight: 700; color: #1C1C1E;">{typo}</td>
-                <td style="padding: 12px; color: #374151;">{sbua}</td>
-                <td style="padding: 12px; color: #374151;">{carpet}</td>
-                <td style="padding: 12px; color: #374151;">{eff}</td>
-                <td style="padding: 12px; font-weight: 600; color: #8C6734;">{base}</td>
-                <td style="padding: 12px; font-weight: 700; color: #10B981;">{onroad}</td>
+              <tr style="border-bottom:0.5px solid #FAFAFA;">
+                <td style="padding:0.9rem 1.25rem 0.9rem 1.5rem; font-weight:700; color:#1C1C1E;">{typo}</td>
+                <td style="padding:0.9rem 1.25rem; color:#374151;">{sbua}</td>
+                <td style="padding:0.9rem 1.25rem; color:#374151;">{carpet}</td>
+                <td style="padding:0.9rem 1.25rem; color:#374151;">{eff}</td>
+                <td style="padding:0.9rem 1.25rem; font-weight:600; color:#8C6734;">{base}</td>
+                <td style="padding:0.9rem 1.25rem; font-weight:700; color:#10B981;">{onroad}</td>
               </tr>''')
-        new_table_body = '<tbody>' + ''.join(config_rows) + '</tbody>'
-        html = re.sub(r'<tbody>.*?</tbody>', new_table_body, html, flags=re.DOTALL)
+        html = re.sub(
+            r'(min-width:640px.*?<tbody[^>]*>).*?(</tbody>)',
+            r'\1' + ''.join(config_rows) + r'\2',
+            html,
+            flags=re.DOTALL
+        )
+
+    # 2. TARGET 6-PILLAR DILIGENCE SCORE MODAL TABLE (min-width:620px)
+    if prop_pillars:
+        pillar_rows = []
+        for sp in prop_pillars:
+            name = sp.get('pillar_name') or ''
+            score_val = sp.get('score') or ''
+            exp = sp.get('explanation') or ''
+            rating_label = 'Above Average' if float(score_val or 0) >= 4.0 else 'Good'
+            pillar_rows.append(f'''
+              <tr style="border-bottom:0.5px solid #FAFAFA;">
+                <td style="padding:0.85rem 1.25rem; font-weight:700; color:#1C1C1E;">{name}</td>
+                <td style="padding:0.85rem 1.25rem; font-weight:700; color:#8C6734;">{score_val}/5.0</td>
+                <td style="padding:0.85rem 1.25rem; font-weight:600; color:#10B981; text-align:right;">{exp or rating_label}</td>
+              </tr>''')
+        html = re.sub(
+            r'(min-width:620px.*?<tbody[^>]*>).*?(</tbody>)',
+            r'\1' + ''.join(pillar_rows) + r'\2',
+            html,
+            flags=re.DOTALL
+        )
 
     with open(os.path.join(prop_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html)
 
-    print(f'QC Complete: Generated /property/{slug}/index.html with {len(prop_glance)} Glance Stats, {len(prop_points)} Diligence Cards, {len(prop_configs)} Configs.')
+    print(f'QC Complete: Generated /property/{slug}/index.html ({len(prop_pillars)} Score Pillars, {len(prop_configs)} Configs).')
 
 def update_properties_catalog(properties):
     catalog_dir = os.path.join(WORKSPACE_DIR, 'properties')
@@ -221,20 +248,21 @@ def main():
     glance_stats = fetch_tab('Glance_Stats')
     content_points = fetch_tab('Content_Points')
     faqs = fetch_tab('FAQs')
+    score_pillars = fetch_tab('Score_Pillars')
     devs = fetch_tab('Developers')
 
-    print(f'[QC Sync] Fetched {len(properties)} properties, {len(glance_stats)} glance stats, {len(content_points)} content points.')
+    print(f'[QC Sync] Fetched {len(properties)} properties, {len(score_pillars)} score pillars, {len(configs)} configs.')
 
-    template_html = load_template_html()
+    template_html = load_base_template()
 
     for p in properties:
         slug = p.get('slug') or p.get('property_id')
         if not slug:
             continue
-        generate_property_page(p, phases, configs, glance_stats, content_points, faqs, devs, template_html)
+        generate_property_page(p, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, template_html)
 
     update_properties_catalog(properties)
-    print('[QC Sync] 100% Quality Control Complete across all 12 property pages!')
+    print('[QC Sync] Modal Table & Configurations Table Bug Fix Complete across all property pages!')
 
 if __name__ == '__main__':
     main()

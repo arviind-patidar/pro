@@ -137,6 +137,40 @@ window.PROPERTY_DATA = {
       "question": "When is the possession date for Sattva Bliss?",
       "answer": "The target possession date for Sattva Bliss is 22 August 2027."
     }
+  ],
+  "score_pillars": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sattva-bliss-budigere-cross",
+      "pillar_key": "builder_track_record",
+      "pillar_name": "Builder Track Record",
+      "score": "3.4",
+      "explanation": "Delivered projects on schedule with top construction quality."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sattva-bliss-budigere-cross",
+      "pillar_key": "location_potential",
+      "pillar_name": "Micro-Market Potential",
+      "score": "3.5",
+      "explanation": "Located in prime growth corridor with upcoming infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sattva-bliss-budigere-cross",
+      "pillar_key": "construction_quality",
+      "pillar_name": "Construction & Layout Quality",
+      "score": "3.4",
+      "explanation": "Mivan technology structure with high spatial efficiency."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sattva-bliss-budigere-cross",
+      "pillar_key": "legal_compliance",
+      "pillar_name": "RERA & Title Clarity",
+      "score": "3.6",
+      "explanation": "Clear land titles with full K-RERA regulatory approval."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'sattva-bliss-budigere-cross';

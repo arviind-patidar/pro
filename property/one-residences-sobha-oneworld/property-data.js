@@ -137,6 +137,40 @@ window.PROPERTY_DATA = {
       "question": "When is the possession date for One Residences at SOBHA OneWorld?",
       "answer": "The target possession date for One Residences at SOBHA OneWorld is July 2032 \u2013 Sept 2033."
     }
+  ],
+  "score_pillars": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "pillar_key": "builder_track_record",
+      "pillar_name": "Builder Track Record",
+      "score": "3.24",
+      "explanation": "Delivered projects on schedule with top construction quality."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "pillar_key": "location_potential",
+      "pillar_name": "Micro-Market Potential",
+      "score": "3.34",
+      "explanation": "Located in prime growth corridor with upcoming infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "pillar_key": "construction_quality",
+      "pillar_name": "Construction & Layout Quality",
+      "score": "3.24",
+      "explanation": "Mivan technology structure with high spatial efficiency."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "pillar_key": "legal_compliance",
+      "pillar_name": "RERA & Title Clarity",
+      "score": "3.44",
+      "explanation": "Clear land titles with full K-RERA regulatory approval."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'one-residences-sobha-oneworld';

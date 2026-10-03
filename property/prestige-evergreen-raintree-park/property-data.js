@@ -185,6 +185,40 @@ window.PROPERTY_DATA = {
       "question": "When is the possession date for Evergreen at Prestige Raintree Park?",
       "answer": "The target possession date for Evergreen at Prestige Raintree Park is 30 June 2030."
     }
+  ],
+  "score_pillars": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "pillar_key": "builder_track_record",
+      "pillar_name": "Builder Track Record",
+      "score": "4.11",
+      "explanation": "Delivered projects on schedule with top construction quality."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "pillar_key": "location_potential",
+      "pillar_name": "Micro-Market Potential",
+      "score": "4.21",
+      "explanation": "Located in prime growth corridor with upcoming infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "pillar_key": "construction_quality",
+      "pillar_name": "Construction & Layout Quality",
+      "score": "4.11",
+      "explanation": "Mivan technology structure with high spatial efficiency."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "pillar_key": "legal_compliance",
+      "pillar_name": "RERA & Title Clarity",
+      "score": "4.31",
+      "explanation": "Clear land titles with full K-RERA regulatory approval."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'prestige-evergreen-raintree-park';
