@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-belvedere-budigere-cross",
-      "faq_id": "brigade-belvedere-budigere-cross-faq-1",
-      "question": "What is the starting price of Brigade Belvedere?",
-      "answer": "The starting price for residences at Brigade Belvedere is \u20b90.93 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-belvedere-budigere-cross",
-      "faq_id": "brigade-belvedere-budigere-cross-faq-2",
-      "question": "What is the RERA registration number of Brigade Belvedere?",
-      "answer": "The RERA registration number for Brigade Belvedere is RERA Completion Target: 31 March 2031."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-belvedere-budigere-cross",
-      "faq_id": "brigade-belvedere-budigere-cross-faq-3",
-      "question": "When is the possession date for Brigade Belvedere?",
-      "answer": "The target possession date for Brigade Belvedere is 31 March 2031."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

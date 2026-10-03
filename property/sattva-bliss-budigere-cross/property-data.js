@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-bliss-budigere-cross",
-      "faq_id": "sattva-bliss-budigere-cross-faq-1",
-      "question": "What is the starting price of Sattva Bliss?",
-      "answer": "The starting price for residences at Sattva Bliss is \u20b90.66 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-bliss-budigere-cross",
-      "faq_id": "sattva-bliss-budigere-cross-faq-2",
-      "question": "What is the RERA registration number of Sattva Bliss?",
-      "answer": "The RERA registration number for Sattva Bliss is RERA Completion: 22 August 2027."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-bliss-budigere-cross",
-      "faq_id": "sattva-bliss-budigere-cross-faq-3",
-      "question": "When is the possession date for Sattva Bliss?",
-      "answer": "The target possession date for Sattva Bliss is 22 August 2027."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

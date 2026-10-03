@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-edition-whitefield",
-      "faq_id": "sumadhura-edition-whitefield-faq-1",
-      "question": "What is the starting price of Sumadhura Edition?",
-      "answer": "The starting price for residences at Sumadhura Edition is \u20b92.06 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-edition-whitefield",
-      "faq_id": "sumadhura-edition-whitefield-faq-2",
-      "question": "What is the RERA registration number of Sumadhura Edition?",
-      "answer": "The RERA registration number for Sumadhura Edition is Phase-I RERA Completion: 31 December 2029."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-edition-whitefield",
-      "faq_id": "sumadhura-edition-whitefield-faq-3",
-      "question": "When is the possession date for Sumadhura Edition?",
-      "answer": "The target possession date for Sumadhura Edition is 31 December 2029."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

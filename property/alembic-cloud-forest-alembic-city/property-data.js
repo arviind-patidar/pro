@@ -120,23 +120,58 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-cloud-forest-alembic-city-faq-1",
+      "faq_id": "alembic-faq-1",
       "question": "What is the starting price of Alembic Cloud Forest at Alembic City?",
       "answer": "The starting price for residences at Alembic Cloud Forest at Alembic City is \u20b92.20 Cr*."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-cloud-forest-alembic-city-faq-2",
+      "faq_id": "alembic-faq-2",
       "question": "What is the RERA registration number of Alembic Cloud Forest at Alembic City?",
-      "answer": "The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target: 1 October 2029."
+      "answer": "The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target Completion: 1 October 2029."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-cloud-forest-alembic-city-faq-3",
+      "faq_id": "alembic-faq-3",
       "question": "When is the possession date for Alembic Cloud Forest at Alembic City?",
       "answer": "The target possession date for Alembic Cloud Forest at Alembic City is 1 October 2029."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-faq-4",
+      "question": "What is the total acquisition cost of buying an Alembic Cloud Forest at Alembic City apartment?",
+      "answer": "The advertised base price starting from \u20b92.20 Cr* is one component. Buyers must account for infrastructure/clubhouse charges, covered parking bays, floor rise/PLC, GST at 5%, and Karnataka Stamp Duty & Registration at 6.6%."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-faq-5",
+      "question": "What is the carpet-area space efficiency of Alembic Cloud Forest at Alembic City floor plans?",
+      "answer": "Carpet efficiency across Alembic Cloud Forest ranges between 65.2% and 66.6%. The 2 BHK unit (1,150 sq.ft. SBUA) offers ~750 sq.ft. carpet area, while the 3 BHK unit (1,650 sq.ft. SBUA) offers ~1,100 sq.ft. carpet area."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-faq-6",
+      "question": "Is Alembic Cloud Forest at Alembic City suitable for end-use living?",
+      "answer": "Yes. Alembic Cloud Forest is ideal for families seeking an institutional 24-acre township lifestyle with >70% open green spaces, 3 towers, and fast connectivity to Kadugodi Metro (0.8 km) and ITPL Whitefield (2.5 km)."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-faq-7",
+      "question": "What is the long-term investment case and rental yield expectation?",
+      "answer": "The project offers strong rental demand from over 350,000 tech employees across Whitefield and ITPL corridors. Capital growth is backed by Tier-1 Alembic balance-sheet execution."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-faq-8",
+      "question": "What due diligence should I verify before executing the booking agreement?",
+      "answer": "Before paying booking advances, verify specific tower construction milestones linked to your payment schedule, demarcated parking slot allocation, sanctioned K-RERA carpet area, and legal title certificates."
     }
   ],
   "score_pillars": [
@@ -262,6 +297,52 @@ window.PROPERTY_DATA = {
       "travel_time_mins": "12 mins"
     }
   ],
-  "amenities": []
+  "amenities": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "amenity_id": "am_1",
+      "amenity_name": "Clubhouse & Lounge",
+      "category": "leisure",
+      "icon_name": "home",
+      "description": "2,200+ sq.ft. per 100 homes clubhouse with multi-purpose halls"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "amenity_id": "am_2",
+      "amenity_name": "Temperature-Controlled Pool",
+      "category": "sports",
+      "icon_name": "droplet",
+      "description": "Olympic-length outdoor swimming pool and kids splash pad"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "amenity_id": "am_3",
+      "amenity_name": "Fitness Center & Gym",
+      "category": "health",
+      "icon_name": "activity",
+      "description": "State-of-the-art gymnasium with cardio and strength training equipment"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "amenity_id": "am_4",
+      "amenity_name": "Badminton & Squash Courts",
+      "category": "sports",
+      "icon_name": "dribbble",
+      "description": "Indoor wooden badminton courts and squash facilities"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "amenity_id": "am_5",
+      "amenity_name": "Landscaped Courtyards",
+      "category": "nature",
+      "icon_name": "sun",
+      "description": "70%+ open green spaces with jogging tracks and seating pavilions"
+    }
+  ]
 };
 window.PROPERTY_SLUG = 'alembic-cloud-forest-alembic-city';

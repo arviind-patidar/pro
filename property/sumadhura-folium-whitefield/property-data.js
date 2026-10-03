@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-folium-whitefield",
-      "faq_id": "sumadhura-folium-whitefield-faq-1",
-      "question": "What is the starting price of Sumadhura Folium?",
-      "answer": "The starting price for residences at Sumadhura Folium is \u20b92.45 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-folium-whitefield",
-      "faq_id": "sumadhura-folium-whitefield-faq-2",
-      "question": "What is the RERA registration number of Sumadhura Folium?",
-      "answer": "The RERA registration number for Sumadhura Folium is Phase IV: PRM/KA/RERA/1251/446/PR/310328 (Timeline Reconciliation Required)."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-folium-whitefield",
-      "faq_id": "sumadhura-folium-whitefield-faq-3",
-      "question": "When is the possession date for Sumadhura Folium?",
-      "answer": "The target possession date for Sumadhura Folium is March 2028 (RERA Phase IV) / Dec 2027 (Builder Page)."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-songbird-budigere-road",
-      "faq_id": "sattva-songbird-budigere-road-faq-1",
-      "question": "What is the starting price of Sattva Songbird?",
-      "answer": "The starting price for residences at Sattva Songbird is \u20b90.72 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-songbird-budigere-road",
-      "faq_id": "sattva-songbird-budigere-road-faq-2",
-      "question": "What is the RERA registration number of Sattva Songbird?",
-      "answer": "The RERA registration number for Sattva Songbird is RERA Completion: 6 May 2029."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sattva-songbird-budigere-road",
-      "faq_id": "sattva-songbird-budigere-road-faq-3",
-      "question": "When is the possession date for Sattva Songbird?",
-      "answer": "The target possession date for Sattva Songbird is 6 May 2029."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

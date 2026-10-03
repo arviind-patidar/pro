@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "riviera-uno-whitefield",
-      "faq_id": "riviera-uno-whitefield-faq-1",
-      "question": "What is the starting price of Riviera Uno Whitefield?",
-      "answer": "The starting price for residences at Riviera Uno Whitefield is \u20b91.00 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "riviera-uno-whitefield",
-      "faq_id": "riviera-uno-whitefield-faq-2",
-      "question": "What is the RERA registration number of Riviera Uno Whitefield?",
-      "answer": "The RERA registration number for Riviera Uno Whitefield is RERA Registration Received."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "riviera-uno-whitefield",
-      "faq_id": "riviera-uno-whitefield-faq-3",
-      "question": "When is the possession date for Riviera Uno Whitefield?",
-      "answer": "The target possession date for Riviera Uno Whitefield is Q4 2028."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

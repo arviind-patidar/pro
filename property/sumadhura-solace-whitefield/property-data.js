@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-solace-whitefield",
-      "faq_id": "sumadhura-solace-whitefield-faq-1",
-      "question": "What is the starting price of Sumadhura Solace?",
-      "answer": "The starting price for residences at Sumadhura Solace is \u20b92.18 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-solace-whitefield",
-      "faq_id": "sumadhura-solace-whitefield-faq-2",
-      "question": "What is the RERA registration number of Sumadhura Solace?",
-      "answer": "The RERA registration number for Sumadhura Solace is PRM/KA/RERA/1251/446/PR/111225/008330."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-solace-whitefield",
-      "faq_id": "sumadhura-solace-whitefield-faq-3",
-      "question": "When is the possession date for Sumadhura Solace?",
-      "answer": "The target possession date for Sumadhura Solace is December 2029."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

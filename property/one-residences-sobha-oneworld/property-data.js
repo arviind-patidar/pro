@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "one-residences-sobha-oneworld",
-      "faq_id": "one-residences-sobha-oneworld-faq-1",
-      "question": "What is the starting price of One Residences at SOBHA OneWorld?",
-      "answer": "The starting price for residences at One Residences at SOBHA OneWorld is \u20b91.10 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "one-residences-sobha-oneworld",
-      "faq_id": "one-residences-sobha-oneworld-faq-2",
-      "question": "What is the RERA registration number of One Residences at SOBHA OneWorld?",
-      "answer": "The RERA registration number for One Residences at SOBHA OneWorld is July 2032 \u2013 September 2033 (across 6 RERA phases)."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "one-residences-sobha-oneworld",
-      "faq_id": "one-residences-sobha-oneworld-faq-3",
-      "question": "When is the possession date for One Residences at SOBHA OneWorld?",
-      "answer": "The target possession date for One Residences at SOBHA OneWorld is July 2032 \u2013 Sept 2033."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

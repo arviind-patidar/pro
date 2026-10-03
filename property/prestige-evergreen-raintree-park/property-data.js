@@ -168,23 +168,58 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "prestige-evergreen-raintree-park-faq-1",
-      "question": "What is the starting price of Evergreen at Prestige Raintree Park?",
-      "answer": "The starting price for residences at Evergreen at Prestige Raintree Park is \u20b91.07 Cr*."
+      "faq_id": "evergreen-faq-1",
+      "question": "Is Evergreen at Prestige Raintree Park RERA registered?",
+      "answer": "Yes. Evergreen @ Prestige Raintree Park is registered under Karnataka RERA with registration number PRM/KA/RERA/1251/446/PR/010126/008374, with a completion target of 30 June 2030."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "prestige-evergreen-raintree-park-faq-2",
-      "question": "What is the RERA registration number of Evergreen at Prestige Raintree Park?",
-      "answer": "The RERA registration number for Evergreen at Prestige Raintree Park is PRM/KA/RERA/1251/446/PR/010126/008374 | Target: 30 June 2030."
+      "faq_id": "evergreen-faq-2",
+      "question": "What is the total acquisition cost of buying in Evergreen at Prestige Raintree Park?",
+      "answer": "While base rates range from \u20b915,500 to \u20b916,300/sq.ft., all-inclusive on-road acquisition costs range from approximately \u20b91.07 Cr for 1 BHK up to \u20b94.09 Cr+ for 4 BHK, factoring in floor rise, PLC, parking, infrastructure, GST (5%), and stamp duty/registration (~6.6%)."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "prestige-evergreen-raintree-park-faq-3",
-      "question": "When is the possession date for Evergreen at Prestige Raintree Park?",
-      "answer": "The target possession date for Evergreen at Prestige Raintree Park is 30 June 2030."
+      "faq_id": "evergreen-faq-3",
+      "question": "What is the carpet-area space efficiency of Evergreen floor plans?",
+      "answer": "Carpet efficiency across Evergreen ranges between 66.5% and 69.8% depending on typology. The 1 BHK unit (976 sq.ft. SBA) offers ~659 sq.ft. RERA carpet (67.5% efficiency)."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "evergreen-faq-4",
+      "question": "Is Evergreen at Prestige Raintree Park suitable for end-use living?",
+      "answer": "Evergreen is an attractive option for end users seeking a master-planned township lifestyle with Prestige\u2019s construction quality, dual clubhouses (~86,000 sq.ft.), and direct access to top schools (Chrysalis, TISB, Greenwood High) within 15 minutes."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "evergreen-faq-5",
+      "question": "What is the long-term investment case and rental yield expectation?",
+      "answer": "The project offers a projected gross rental yield of 3.8%\u20134.4%, anchored by over 350,000 tech employees across Whitefield and Outer Ring Road."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "evergreen-faq-6",
+      "question": "What are the key watch-outs and risks identified by acre&key?",
+      "answer": "acre&key\u2019s due diligence highlights four key operational watch-outs: Varthur Junction Bottleneck, Civic Drainage Infrastructure, Cauvery Water Transition, and Township Shared CAM Charges."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "evergreen-faq-7",
+      "question": "What is the difference between Prestige Raintree Park Phase 1 and Evergreen Phase 2?",
+      "answer": "Phase 1 focuses strictly on large luxury units (3, 4, 5 BHKs starting at \u20b92.75 Cr+), while Phase 2 (Evergreen) offers a broader configuration mix from 1 BHK to 4 BHK starting at \u20b91.07 Cr."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "evergreen-faq-8",
+      "question": "What due diligence should I verify before executing the booking agreement?",
+      "answer": "Before paying booking advances, verify specific tower construction milestones linked to your payment plan schedule, demarcated covered parking allocation, and sanctioned carpet area."
     }
   ],
   "score_pillars": [

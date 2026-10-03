@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-granada",
-      "faq_id": "brigade-granada-faq-1",
-      "question": "What is the starting price of Brigade Granada?",
-      "answer": "The starting price for residences at Brigade Granada is \u20b91.00 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-granada",
-      "faq_id": "brigade-granada-faq-2",
-      "question": "What is the RERA registration number of Brigade Granada?",
-      "answer": "The RERA registration number for Brigade Granada is RERA Registration Received."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "brigade-granada",
-      "faq_id": "brigade-granada-faq-3",
-      "question": "When is the possession date for Brigade Granada?",
-      "answer": "The target possession date for Brigade Granada is Q4 2028."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",

@@ -116,29 +116,7 @@ window.PROPERTY_DATA = {
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
     }
   ],
-  "faqs": [
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-capitol-residences",
-      "faq_id": "sumadhura-capitol-residences-faq-1",
-      "question": "What is the starting price of Sumadhura Capitol Residences?",
-      "answer": "The starting price for residences at Sumadhura Capitol Residences is \u20b92.55 Cr*."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-capitol-residences",
-      "faq_id": "sumadhura-capitol-residences-faq-2",
-      "question": "What is the RERA registration number of Sumadhura Capitol Residences?",
-      "answer": "The RERA registration number for Sumadhura Capitol Residences is Reported RERA Completion: 30 December 2027."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "sumadhura-capitol-residences",
-      "faq_id": "sumadhura-capitol-residences-faq-3",
-      "question": "When is the possession date for Sumadhura Capitol Residences?",
-      "answer": "The target possession date for Sumadhura Capitol Residences is 30 December 2027."
-    }
-  ],
+  "faqs": [],
   "score_pillars": [
     {
       "row_flag": "LIVE",
