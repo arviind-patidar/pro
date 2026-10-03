@@ -1,0 +1,33 @@
+name: Sync Google Sheet Property Pages
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Runs automatically every hour
+  workflow_dispatch:     # Allows manual trigger via GitHub UI button
+
+permissions:
+  contents: write
+
+jobs:
+  sync-sheet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Fetch Google Sheet & Build Property Pages
+        run: |
+          python3 scripts/sync_sheet.py
+
+      - name: Commit & Push Changes
+        run: |
+          git config --global user.name 'Google Sheet Sync Bot'
+          git config --global user.email 'bot@acrenkey.com'
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync property pages from Google Sheet [skip ci]" && git push)

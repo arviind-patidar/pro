@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Intelligence Dossier | Acre&Key</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../website.min.css">
+  <link rel="stylesheet" href="../lead-form.min.css">
+  <link rel="stylesheet" href="../abha-form.min.css">
+  <link rel="stylesheet" href="../style-guide/assets/css/property.css">
+  <script src="https://unpkg.com/feather-icons" defer></script>
+  <script src="../website.min.js" defer></script>
+  <script src="../lead-form.min.js" defer></script>
+  <script src="../style-guide/assets/js/sheet-sync.js" defer></script>
+</head>
+<body>
+  <div style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Josefin Sans', sans-serif; text-align: center; padding: 2rem;">
+    <div style="background: #FFFFFF; border: 0.5px solid #E5E0D8; border-radius: 4px; padding: 2.5rem; max-width: 650px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+      <h1 class="prop-hero-title" style="font-size: 2rem; color: #1C1C1E; margin-bottom: 0.5rem;" data-sheet-field="display_name">Loading Property Intelligence...</h1>
+      <p class="prop-hero-tagline" style="color: #8C6734; font-weight: 600; font-size: 0.95rem; margin-bottom: 1.5rem;" data-sheet-field="hero_tagline">Connecting to Live Google Sheet Ecosystem...</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; text-align: left; background: #F9F8F6; padding: 1.25rem; border-radius: 4px;">
+        <div>
+          <span style="font-size: 0.72rem; color: #6B7280; font-weight: 700; text-transform: uppercase;">Location</span>
+          <div style="font-weight: 600; color: #1C1C1E;" data-sheet-field="location_label">Loading...</div>
+        </div>
+        <div>
+          <span style="font-size: 0.72rem; color: #6B7280; font-weight: 700; text-transform: uppercase;">Indicative Price</span>
+          <div style="font-weight: 600; color: #8C6734;" data-sheet-field="price_range">Loading...</div>
+        </div>
+        <div>
+          <span style="font-size: 0.72rem; color: #6B7280; font-weight: 700; text-transform: uppercase;">RERA Number</span>
+          <div style="font-weight: 600; color: #1C1C1E;" data-sheet-field="rera_primary_id">Loading...</div>
+        </div>
+        <div>
+          <span style="font-size: 0.72rem; color: #6B7280; font-weight: 700; text-transform: uppercase;">Diligence Score</span>
+          <div style="font-weight: 600; color: #10B981;" data-sheet-field="overall_diligence_score">Loading...</div>
+        </div>
+      </div>
+
+      <p class="prop-about-lead" style="font-size: 0.9rem; color: #374151; line-height: 1.6; margin-bottom: 1.5rem;" data-sheet-field="about_lead"></p>
+
+      <a href="../properties/" style="display: inline-block; background: linear-gradient(135deg, #be7555 0%, #9f5334 100%); color: white; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.85rem;">View All Properties Directory</a>
+    </div>
+  </div>
+</body>
+</html>
