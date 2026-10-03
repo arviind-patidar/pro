@@ -1,0 +1,793 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MKSRMW9C');</script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Properties in Bengaluru | Acre&amp;Key | Acre&amp;Key Bangalore</title>
+  <meta name="description" content="Explore Acre&amp;Key-assessed residential properties in Bengaluru. Compare projects by price, location, configuration, possession and Acre&amp;Key Score.">
+  <link rel="canonical" href"../../properties/">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Properties in Bengaluru | Acre&amp;Key">
+  <meta property="og:description" content="Research-backed residential projects evaluated by Acre&amp;Key. Compare prices, configurations, possession timelines and our independent assessment.">
+  <meta property="og:url" content="https://acrenkey.com/properties/">
+  <meta property="og:image" content="https://acrenkey.com/style-guide/assets/sumadhura_solace_hero.webp">
+  
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="../style-guide/assets/favicon.svg?v=1790787186000">
+  <script src="https://unpkg.com/feather-icons defer"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../website.min.css?v=FLUSH_1791020747">
+  <link rel="stylesheet" href="../lead-form.min.css?v=FLUSH_1791020747"><link rel="stylesheet" href="../abha-form.min.css?v=FLUSH_1791020747">
+
+  <!-- Custom Page Styles -->
+  <style>
+    body {
+      background-color: var(--titanium-frost, #FAFAFA);
+    }
+    
+    .props-hero-section {
+      padding: 3.5rem 0 2rem 0;
+      background: radial-gradient(65% 55% at 50% 0%, rgba(140, 103, 52, 0.06) 0%, rgba(251, 246, 243, 0) 70%);
+      border-bottom: 0.5px solid rgba(47, 59, 66, 0.08);
+    }
+
+    .props-header-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .props-kicker {
+      display: inline-block;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #5E4119;
+      margin-bottom: 0.75rem;
+    }
+
+    .props-main-title {
+      font-family: 'Marcellus', serif;
+      font-size: clamp(2rem, 1.6rem + 1.5vw, 3rem);
+      color: #2F3B42;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+
+    .props-subtitle {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.05rem;
+      color: #374151;
+      line-height: 1.65;
+      max-width: 760px;
+      margin: 0 auto 2rem auto;
+    }
+
+    /* Search & Filter Container */
+    .props-controls-section {
+      position: sticky;
+      top: 68px;
+      z-index: 900;
+      background: rgba(251, 246, 243, 0.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 0.5px solid rgba(85, 85, 90, 0.2);
+      padding: 1.25rem 0;
+      box-shadow: 0 4px 16px rgba(47, 59, 66, 0.04);
+    }
+
+    .props-search-box {
+      position: relative;
+      width: 100%;
+      max-width: 760px;
+      margin: 0 auto 1.25rem auto;
+    }
+
+    .props-search-input {
+      width: 100%;
+      height: 52px;
+      padding: 0 1.25rem 0 3.2rem;
+      font-family: 'Manrope', sans-serif;
+      font-size: 1rem;
+      color: #2F3B42;
+      background: #FFFFFF;
+      border: 1.5px solid rgba(85, 85, 90, 0.2);
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(47, 59, 66, 0.04);
+      outline: none;
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+
+    .props-search-input:focus {
+      border-color: #8C6734;
+      box-shadow: 0 0 0 3px rgba(140, 103, 52, 0.15);
+    }
+
+    .props-search-icon {
+      position: absolute;
+      left: 1.1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #5E4119;
+      pointer-events: none;
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Filter Bar Row */
+    .props-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .props-filter-group {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+
+    .props-select-wrapper {
+      position: relative;
+      min-width: 140px;
+    }
+
+    .props-select-control {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 100%;
+      height: 42px;
+      padding: 0 2rem 0 0.85rem;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #2F3B42;
+      background: #FFFFFF;
+      border: 0.5px solid rgba(85, 85, 90, 0.2);
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 200ms ease;
+    }
+
+    .props-select-control:hover, .props-select-control:focus {
+      border-color: #8C6734;
+      background-color: #FDFBF9;
+    }
+
+    .props-select-arrow {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #5E4119;
+      width: 14px;
+      height: 14px;
+    }
+
+    .props-clear-btn {
+      background: transparent;
+      border: 1px dashed rgba(85, 85, 90, 0.2);
+      color: #5E4119;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 0 0.85rem;
+      height: 42px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 200ms ease;
+      white-space: nowrap;
+    }
+
+    .props-clear-btn:hover {
+      border-color: #8C6734;
+      color: #8C6734;
+      background: rgba(140, 103, 52, 0.05);
+    }
+
+    .props-results-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 0.5px solid rgba(47, 59, 66, 0.08);
+    }
+
+    .props-counter-text {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    /* Property Cards Grid */
+    .props-grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      margin-bottom: 4rem;
+    }
+
+    @media (max-width: 1024px) {
+      .props-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .props-grid-container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+      .props-controls-section {
+        top: 68px;
+        padding: 0.85rem 0;
+      }
+      .props-search-box {
+        margin-bottom: 0.75rem;
+      }
+      .props-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .props-filter-group {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+      }
+      .props-filter-group::-webkit-scrollbar { display: none; }
+      .props-select-wrapper {
+        min-width: 130px;
+        flex-shrink: 0;
+      }
+    }
+
+    /* Property Card Component */
+    .ak-card-anchor {
+      text-decoration: none !important;
+      color: inherit !important;
+      display: block;
+      height: 100%;
+    }
+
+    .ak-property-card {
+      background: #FFFFFF;
+      border: 0.5px solid rgba(85, 85, 90, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(47, 59, 66, 0.05);
+      transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 250ms ease, border-color 250ms ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .ak-card-anchor:hover .ak-property-card {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px -8px rgba(47, 59, 66, 0.15);
+      border-color: #8C6734;
+    }
+
+    .ak-card-img-box {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #2F3B42;
+    }
+
+    .ak-card-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .ak-card-anchor:hover .ak-card-img-box img {
+      transform: scale(1.05);
+    }
+
+    .ak-card-dev-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(47, 59, 66, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.65rem;
+      border-radius: 4px;
+      border: 0.5px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .ak-card-body {
+      padding: 1.35rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .ak-card-header {
+      margin-bottom: 0.85rem;
+    }
+
+    .ak-card-title {
+      font-family: 'Marcellus', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: #2F3B42;
+      line-height: 1.25;
+      margin: 0 0 0.35rem 0;
+      transition: color 200ms ease;
+    }
+
+    .ak-card-anchor:hover .ak-card-title {
+      color: #8C6734;
+    }
+
+    .ak-card-loc {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.82rem;
+      color: #5E4119;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .ak-card-loc svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    .ak-card-price-row {
+      background: #FAFAFA;
+      border: 0.5px solid rgba(221, 215, 207, 0.6);
+      border-radius: 4px;
+      padding: 0.6rem 0.85rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ak-card-price-label {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #374151;
+    }
+
+    .ak-card-price-val {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #2F3B42;
+    }
+
+    .ak-card-specs {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.84rem;
+      color: #374151;
+    }
+
+    .ak-spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .ak-spec-item svg {
+      width: 15px;
+      height: 15px;
+      color: #5E4119;
+      flex-shrink: 0;
+    }
+
+    /* Acre&Key Research Assessment Box */
+    .ak-card-score-box {
+      background: #FAFAFA;
+      border: 0.5px solid rgba(140, 103, 52, 0.25);
+      border-radius: 4px;
+      padding: 0.85rem 1rem;
+      margin-top: auto;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .ak-score-badge {
+      background: #2F3B42;
+      color: #FFFFFF;
+      border-radius: 4px;
+      padding: 0.45rem 0.65rem;
+      text-align: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(47, 59, 66, 0.15);
+    }
+
+    .ak-score-num {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      line-height: 1;
+      display: block;
+      color: #FFFFFF;
+    }
+
+    .ak-score-sub {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .ak-score-verdict-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      flex: 1;
+    }
+
+    .ak-verdict-kicker {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #5E4119;
+    }
+
+    .ak-verdict-badge {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: #2F3B42;
+      line-height: 1.3;
+    }
+
+    .ak-card-footer {
+      padding-top: 0.75rem;
+      border-top: 0.5px solid rgba(47, 59, 66, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .ak-card-cta-link {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #8C6734;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: transform 200ms ease;
+    }
+
+    .ak-card-anchor:hover .ak-cta-arrow {
+      transform: translateX(4px);
+    }
+
+    .ak-cta-arrow {
+      display: inline-block;
+      transition: transform 200ms ease;
+    }
+
+    /* No Results State */
+    .ak-no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      background: #FFFFFF;
+      border: 1px dashed rgba(85, 85, 90, 0.2);
+      border-radius: 4px;
+    }
+
+    .ak-no-results-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem auto;
+      color: #5E4119;
+      opacity: 0.6;
+    }
+  </style>
+  
+  <!-- Schema.org ItemList Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Acre&Key Assessed Residential Properties in Bengaluru",
+    "description": "Research-backed residential projects evaluated by Acre&Key.",
+    "url": "https://acrenkey.com/properties/",
+    "numberOfItems": 11,
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Sumadhura Solace", "url": "https://acrenkey.com/property/sumadhura-solace-whitefield/"},
+      {"@type": "ListItem", "position": 2, "name": "Sumadhura Folium", "url": "https://acrenkey.com/property/sumadhura-folium-whitefield/"},
+      {"@type": "ListItem", "position": 3, "name": "Sattva Songbird", "url": "https://acrenkey.com/property/sattva-songbird-budigere-road/"},
+      {"@type": "ListItem", "position": 4, "name": "Sattva Bliss", "url": "https://acrenkey.com/property/sattva-bliss-budigere-cross/"},
+      {"@type": "ListItem", "position": 5, "name": "Evergreen at Prestige Raintree Park", "url": "https://acrenkey.com/property/prestige-evergreen-raintree-park"},
+      {"@type": "ListItem", "position": 6, "name": "Brigade Belvedere", "url": "https://acrenkey.com/property/brigade-belvedere-budigere-cross/"},
+      {"@type": "ListItem", "position": 7, "name": "Alembic Cloud Forest at Alembic City", "url": "https://acrenkey.com/property/alembic-cloud-forest-alembic-city/"},
+      {"@type": "ListItem", "position": 8, "name": "One Residences at SOBHA OneWorld", "url": "https://acrenkey.com/property/one-residences-sobha-oneworld/"},
+      {"@type": "ListItem", "position": 9, "name": "Sumadhura Edition", "url": "https://acrenkey.com/property/sumadhura-edition-whitefield/"},
+      {"@type": "ListItem", "position": 10, "name": "Sumadhura Capitol Residences", "url": "https://acrenkey.com/property/sumadhura-capitol-residences/"},
+      {"@type": "ListItem", "position": 11, "name": "Riviera Uno", "url": "https://acrenkey.com/property/riviera-uno-whitefield/"}
+    ]
+  }
+  </script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Manrope:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKSRMW9C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Site Header -->
+  <header class="header-nav" id=header-nav><div class="container nav-container"><a href="/" class=nav-brand><span class=brand-logo-text>acre&amp;key</span></a><ul class=nav-links><li><a href="/#who-were-for">Who We Serve</a></li><li><a href="/#framework">Decision Framework</a></li><li><a href="/#core">CORE</a></li><li><a href="/#about-us">About Us</a></li><li><a href="/#testimonials">Testimonials</a></li></ul><a href="#" class="nav-cta-btn primary-cta-btn" onclick="window.openModal(); return false;"><span>Start Consultation</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></a><button class=mobile-toggle id=mobile-toggle-btn aria-label="Toggle Navigation Menu" aria-expanded=false><span class="hamburger-line top-line"></span><span class="hamburger-line mid-line"></span><span class="hamburger-line bot-line"></span></button></div><div class=mobile-nav-overlay id=mobile-nav-overlay aria-hidden=true></div><div class=mobile-drawer id=mobile-drawer role=dialog aria-modal=true aria-label="Navigation Menu"><div class=mobile-drawer-inner><div class=mobile-drawer-header><a href="/" class=mobile-drawer-brand aria-label="Acre and Key Home"><span class=brand-logo-text>acre&amp;key</span></a><button class=mobile-drawer-close id=mobile-drawer-close aria-label="Close Navigation Menu"><svg width=22 height=22 viewbox="0 0 24 24" fill=none stroke=var(--deep-navy) stroke-width=2 stroke-linecap=round stroke-linejoin=round><line x1=18 y1=6 x2=6 y2=18></line><line x1=6 y1=6 x2=18 y2=18></line></svg></button></div><nav class=mobile-nav-list><a href="/#who-were-for" class=mobile-nav-item><span class=mobile-nav-label>Who We Serve</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#framework" class=mobile-nav-item><span class=mobile-nav-label>Decision Framework</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#core" class=mobile-nav-item><span class=mobile-nav-label>Core</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#about-us" class=mobile-nav-item><span class=mobile-nav-label>About Us</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#testimonials" class=mobile-nav-item><span class=mobile-nav-label>Testimonials</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a></nav><div class=mobile-drawer-footer><button type="button" class="mobile-drawer-cta primary-cta-btn" onclick="window.openModal();"><span>Start Consultation</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></button><span class=mobile-drawer-subtext>Expert Property Guidance</span><div class=mobile-drawer-socials><a href=https://www.linkedin.com/company/acrenkey/ target=_blank rel="noopener noreferrer" aria-label=LinkedIn><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a><a href=https://www.instagram.com/acrenkey/ target=_blank rel="noopener noreferrer" aria-label=Instagram><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href=https://www.youtube.com/channel/UC-6WtLxFOaR_X2y7FQTBcHw target=_blank rel="noopener noreferrer" aria-label=YouTube><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href=https://x.com/acreNkey target=_blank rel="noopener noreferrer" aria-label=Twitter/X><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 23.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61589792184848" target=_blank rel="noopener noreferrer" aria-label=Facebook><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></div></div></div></div></header>
+
+  <main>
+    <!-- Hero Header -->
+    <section class="props-hero-section">
+      <div class="container">
+        <div class="props-header-wrapper">
+          <nav aria-label="breadcrumb" style="margin-bottom: 1rem;">
+            <ol class="page-breadcrumb" style="justify-content: center;">
+              <li><a href="/">Home</a></li>
+              <li><span class="separator">›</span></li>
+              <li><a href="/#core">Bengaluru</a></li>
+              <li><span class="separator">›</span></li>
+              <li class="current" aria-current="page">Properties</li>
+            </ol>
+          </nav>
+          <span class="props-kicker"><span class="brand-inline-text">acre&amp;key</span> Research Intelligence</span>
+          <h1 class="props-main-title">Properties in Bengaluru</h1>
+          <p class="props-subtitle">Research-backed residential projects evaluated by <span class="brand-inline-text">acre&amp;key</span>. Compare prices, configurations, possession timelines and our independent assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Sticky Bar -->
+    <section class="props-controls-section">
+      <div class="container">
+        <!-- Search Field -->
+        <div class="props-search-box">
+          <i data-feather="search" class="props-search-icon"></i>
+          <input type="text" id="prop-search-input" class="props-search-input" placeholder="Search project, developer or location..." aria-label="Search properties">
+        </div>
+
+        <!-- Filters & Sorting Controls -->
+        <div class="props-filter-bar">
+          <div class="props-filter-group">
+            <!-- Location -->
+            <div class="props-select-wrapper">
+              <select id="filter-location" class="props-select-control" aria-label="Filter by Location">
+                <option value="">All Locations</option>
+              </select>
+              <i data-feather="chevron-down" class="props-select-arrow"></i>
+            </div>
+
+            <!-- Budget -->
+            <div class="props-select-wrapper">
+              <select id="filter-budget" class="props-select-control" aria-label="Filter by Budget">
+                <option value="">All Budgets</option>
+                <option value="under_1.5">Under ₹1.5 Cr</option>
+                <option value="1.5_2">₹1.5–2 Cr</option>
+                <option value="2_3">₹2–3 Cr</option>
+                <option value="3_5">₹3–5 Cr</option>
+                <option value="above_5">₹5 Cr+</option>
+              </select>
+              <i data-feather="chevron-down" class="props-select-arrow"></i>
+            </div>
+
+            <!-- Configuration -->
+            <div class="props-select-wrapper">
+              <select id="filter-config" class="props-select-control" aria-label="Filter by Configuration">
+                <option value="">All Configurations</option>
+                <option value="1 BHK">1 BHK</option>
+                <option value="2 BHK">2 BHK</option>
+                <option value="3 BHK">3 BHK</option>
+                <option value="3.5 BHK">3.5 BHK</option>
+                <option value="4 BHK">4 BHK</option>
+                <option value="Villas">Villas</option>
+              </select>
+              <i data-feather="chevron-down" class="props-select-arrow"></i>
+            </div>
+
+            <!-- Possession -->
+            <div class="props-select-wrapper">
+              <select id="filter-possession" class="props-select-control" aria-label="Filter by Possession">
+                <option value="">All Possessions</option>
+                <option value="ready">Ready to Move</option>
+                <option value="under_1">&lt; 1 Year</option>
+                <option value="1_2">1–2 Years</option>
+                <option value="2_4">2–4 Years</option>
+                <option value="above_4">4+ Years</option>
+              </select>
+              <i data-feather="chevron-down" class="props-select-arrow"></i>
+            </div>
+
+            <!-- Developer -->
+            <div class="props-select-wrapper">
+              <select id="filter-developer" class="props-select-control" aria-label="Filter by Developer">
+                <option value="">All Developers</option>
+              </select>
+              <i data-feather="chevron-down" class="props-select-arrow"></i>
+            </div>
+
+            <button type="button" id="clear-filters-btn" class="props-clear-btn">Clear All</button>
+          </div>
+
+          <!-- Sorting Dropdown -->
+          <div class="props-select-wrapper" style="min-width: 180px;">
+            <select id="sort-select" class="props-select-control" aria-label="Sort Properties">
+              <option value="recommended">Sort: <span class="brand-inline-text">acre&amp;key</span> Recommended</option>
+              <option value="score_desc"><span class="brand-inline-text">acre&amp;key</span> Score: High → Low</option>
+              <option value="price_asc">Price: Low → High</option>
+              <option value="price_desc">Price: High → Low</option>
+              <option value="possession_asc">Possession: Earliest</option>
+            </select>
+            <i data-feather="chevron-down" class="props-select-arrow"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties Grid Section -->
+    <section style="padding-top: 1rem;">
+      <div class="container">
+        <div class="props-results-info">
+          <span id="results-counter" class="props-counter-text">Showing 11 of 11 verified projects</span>
+        </div>
+
+        <div id="properties-grid" class="props-grid-container">
+          <!-- Dynamically populated via properties.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-main-grid">
+      <!-- Left Column: Brand, Mission, Contact & Office -->
+      <div class="footer-brand-col">
+        <a href="../" class="footer-logo-wordmark">acre&amp;key</a>
+        <div class="footer-tagline">Home Buyer Concierge</div>
+        <p class="footer-mission">
+          Independent Home Buyer Concierge in Bangalore. We advise discerning home buyers, HNI investors, and corporate leaders with strategy-consulting rigor, unbiased shortlists, and 69-point diligence.
+        </p>
+        <div class="footer-address-text">
+          8th floor, Summit A, Brigade Tech Gardens, Mahadevapura, Whitefield, Bengaluru, Karnataka 560048
+        </div>
+      </div>
+
+      <!-- Right Column: Navigation Links, Social Icons & RERA -->
+      <div class="footer-right-col">
+        <div class="footer-links-cluster">
+          <div class="footer-link-line">
+            <a href="/#property-consultant-bangalore">Property Advisory Bangalore</a>
+            <span class="footer-dot">•</span>
+            <a href="/#faq-property-consultant">Property FAQs</a>
+            <span class="footer-dot">•</span>
+            <a href"../../properties/">Properties</a>
+            
+          </div>
+        </div>
+
+        <div class="footer-social-cluster">
+          <a href="https://www.facebook.com/profile.php?id=61589792184848" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+          <a href="https://www.instagram.com/acrenkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+          <a href="https://www.youtube.com/channel/UC-6WtLxFOaR_X2y7FQTBcHw" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+          <a href="https://x.com/acreNkey" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 23.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+          <a href="https://www.linkedin.com/company/acrenkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
+          <a href="https://www.reddit.com/user/acreNkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"></path></svg></a>
+          <a href="https://www.quora.com/profile/AcreNkey" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Quora"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.002 0C5.373 0 0 5.372 0 12.001c0 6.626 5.373 12 12.002 12 2.378 0 4.59-.693 6.452-1.891l2.458 1.837c.379.283.914.07.97-.398l.381-3.181C23.364 18.27 24 15.244 24 12.001 24 5.372 18.63 0 12.002 0zm1.758 17.587l-.297 1.801c-.05.3-.398.435-.635.251l-1.341-1.042c-.477.065-.967.101-1.487.101-4.708 0-8.525-3.031-8.525-6.697 0-3.667 3.817-6.699 8.525-6.699 4.709 0 8.527 3.032 8.527 6.699 0 1.576-.708 3.023-1.902 4.167l.117.893c.036.275-.126.541-.383.626l-2.724.8z"></path></svg></a>
+          <a href="https://pin.it/58qQo3rsD" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.48.03-3.55l1.04-4.42s-.26-.52-.26-1.3c0-1.22.71-2.13 1.59-2.13.75 0 1.11.56 1.11 1.24 0 .75-.48 1.88-.73 2.92-.21.88.44 1.6 1.31 1.6 1.57 0 2.78-1.66 2.78-4.05 0-2.12-1.52-3.6-3.7-3.6-2.52 0-4 1.89-4 3.85 0 .76.29 1.58.66 2.02.07.09.08.17.06.26l-.25 1.02c-.04.16-.14.2-.32.12-1.19-.55-1.93-2.29-1.93-3.69 0-3 2.18-5.76 6.29-5.76 3.3 0 5.87 2.35 5.87 5.5 0 3.28-2.07 5.92-4.94 5.92-.96 0-1.87-.5-2.18-1.09l-.59 2.27c-.22.83-.8 1.88-1.19 2.51A12 12 0 1 0 12 0z"></path></svg></a>
+        </div>
+
+        <div class="footer-rera-info">
+          Karnataka RERA Registration No.:<br>
+          <strong>PRM/KA/RERA/1251/446/AG/260814/007659</strong><br>
+          Acrenkey Realty LLP
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-line">
+      <div>© 2026 Acrenkey Realty LLP. All rights reserved.</div>
+      <div class="footer-legal-links" style="display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap;">
+        <a href="https://grvmon.github.io/careers" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Careers</a>
+        <a href"../../privacy-policy/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Privacy Policy</a>
+        <a href"../../terms-of-service/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Terms of Service</a>
+        <a href"../../rera-disclaimer/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">RERA Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Lead Form Modal Integration -->
+  <div class="lf-modal-overlay" id="lfModalOverlay">
+    <div class="lf-cc-backdrop" id="lfCcBackdrop"></div>
+    <div class="lf-wrap" id="lfWrap" role="dialog" aria-modal="true" aria-labelledby="lfMainHeading" aria-describedby="lfSubHeading">
+      <button type="button" class="lf-modal-close-icon lf-focusable" id="lfModalClose" aria-label="Close modal window" tabindex="0">
+        <svg viewBox="0 0 14 14" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M1 1l12 12M13 1L1 13"></path></svg>
+      </button>
+      <div id="lfModalFormContent">
+        <div class="lf-header">
+          <h2 class="lf-main-heading" id="lfMainHeading">Speak to a Home Buying Expert</h2>
+          <p class="lf-sub-heading" id="lfSubHeading">Tell us what you're looking for, and our advisors will help you shortlist, evaluate, and negotiate the right property.</p>
+        </div>
+        <form class="lf-form" id="lfForm" novalidate="">
+          <input class="lf-hp" type="text" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="lf-field" id="lfNameField">
+            <div class="lf-input-box">
+              <label class="lf-label" for="lfName">Full name<span class="lf-req" aria-hidden="true">*</span></label>
+              <input class="lf-input lf-focusable" type="text" id="lfName" name="name" autocomplete="name" tabindex="0">
+            </div>
+          </div>
+          <div class="lf-field" id="lfPhoneField">
+            <div class="lf-input-box">
+              <label class="lf-label" for="lfPhone">Mobile<span class="lf-req" aria-hidden="true">*</span></label>
+              <input class="lf-input lf-focusable" type="tel" id="lfPhone" name="phone" autocomplete="tel" tabindex="0">
+            </div>
+          </div>
+          <div class="lf-field" id="lfEmailField">
+            <div class="lf-input-box">
+              <label class="lf-label" for="lfEmail">Email<span class="lf-req" aria-hidden="true">*</span></label>
+              <input class="lf-input lf-focusable" type="email" id="lfEmail" name="email" autocomplete="email" tabindex="0">
+            </div>
+          </div>
+          <div class="lf-submit-wrap">
+            <button type="submit" class="lf-btn lf-focusable primary-cta-btn" id="lfSubmitBtn" tabindex="0"><div class="lf-spinner"></div><span id="lfBtnText">Schedule Advisory Call</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../website.min.js?v=FLUSH_1791020747" defer=""></script>
+  <script src="../lead-form.min.js?v=FLUSH_1791020747" defer=""></script><script src="../abha-form.min.js?v=FLUSH_1791020747" defer=""></script>
+  <script src="properties-data.js?v=FLUSH_1791020747"></script>
+  <script src="properties.js?v=FLUSH_1791020747" defer=""></script>
+
+
+</body></html>

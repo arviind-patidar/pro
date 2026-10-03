@@ -1,0 +1,728 @@
+<!DOCTYPE html><html lang="en"><head><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MKSRMW9C');</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Careers | acre&amp;key | Acre&amp;Key Bangalore</title><link href="https://acrenkey.com/careers/" rel="canonical"><meta name="description" content="Join the team at Acre&amp;Key. Build a career that helps people make better, independent property decisions. Explore our values, benefits, and open roles."><meta name="twitter:description" content="Join Acre&amp;Key and build a career helping people make better property decisions. Discover open roles and our buyer-first culture."><meta name="twitter:image" content="https://acrenkey.com/style-guide/assets/og-image.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://acrenkey.com/"},{"@type":"ListItem","position":2,"name":"Careers"}]}</script><link rel="icon" href="../style-guide/assets/favicon.svg?v=1790787186000" type="image/svg+xml" sizes="any"><link rel="preload" href="../style-guide/assets/fonts/xn7gYHE41ni1AdIRggmxSuXd.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><script src="https://unpkg.com/feather-icons" defer=""></script><link rel="preload" href="../style-guide/assets/fonts/xn7gYHE41ni1AdIRggmxSuXd.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="../style-guide/assets/fonts/xn7gYHE41ni1AdIRggmxSuXd.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="../style-guide/assets/fonts/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="../style-guide/assets/fonts/wEO_EBrOk8hQLDvIAF81WPoK7Es.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="../style-guide/assets/fonts/wEO_EBrOk8hQLDvIAF81VvoK.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="preload" href="../style-guide/assets/fonts/xn7gYHE41ni1AdIRggexSg.woff2?v=v112" as="font" type="font/woff2" crossorigin=""><link rel="stylesheet" href="../website.min.css?v=FLUSH_1791020747"><link rel="stylesheet" href="../lead-form.min.css?v=FLUSH_1791020747"><link rel="stylesheet" href="../abha-form.min.css?v=FLUSH_1791020747"><style>
+        /* CSS Variables & Section Padding */
+        .careers-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .careers-section {
+            padding: 4rem 0;
+            position: relative;
+        }
+
+        .careers-section-dark {
+            background-color: var(--obsidian-black);
+            color: var(--white);
+            border-radius: 4px;
+            margin: 4rem 1.5rem;
+            padding: 5rem 3rem;
+            border: 0.5px solid rgba(43, 43, 43, 0.3);
+            box-shadow: var(--shadow-lux);
+        }
+
+        /* Hero Section Split Layout */
+        .careers-hero-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 130px;
+            padding-bottom: 4rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .careers-hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .careers-hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 2rem + 1vw, 2.75rem);
+            line-height: 1.2;
+            color: var(--obsidian-black);
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+        }
+
+        .careers-hero-desc {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            line-height: 1.65;
+            color: var(--neutral-grey);
+            margin-bottom: 2.25rem;
+        }
+
+        .careers-hero-buttons {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            width: 100%;
+        }
+
+        .careers-hero-buttons .sd-btn-gold,
+        .careers-hero-buttons .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            padding: 0 2rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-radius: 4px !important;
+            transition: var(--transition-fast);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .careers-hero-buttons .btn-secondary {
+            border: 0.5px solid var(--obsidian-black);
+            background: transparent;
+            color: var(--obsidian-black);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .careers-hero-buttons .btn-secondary:hover {
+            background: var(--obsidian-black);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* Abstract Collaboration Illustration (Right Side) */
+        .careers-hero-illustration {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 420px;
+        }
+
+        .illustration-bg {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            background: radial-gradient(circle, rgba(43, 43, 43, 0.05) 0%, rgba(244, 241, 234, 0) 70%);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .careers-svg-art {
+            width: 90%;
+            height: auto;
+            z-index: 2;
+            filter: drop-shadow(0 12px 28px rgba(13, 27, 36,0.06));
+        }
+
+        /* Floating Badges */
+        .floating-badge {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 0.5px solid rgba(43, 43, 43, 0.25);
+            border-radius: 4px;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 24px rgba(13, 27, 36, 0.08);
+            z-index: 3;
+            animation: floatUpDown 4s ease-in-out infinite;
+        }
+
+        .badge-1 { top: 12%; left: -5%; animation-delay: 0s; }
+        .badge-2 { bottom: 18%; right: -2%; animation-delay: 1.5s; }
+        .badge-3 { bottom: 8%; left: 8%; animation-delay: 0.8s; }
+
+        .floating-badge-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(43, 43, 43, 0.12);
+            color: var(--refined-brass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-badge-icon svg { width: 16px; height: 16px; stroke-width: 2.2; }
+
+        .floating-badge-text {
+            font-family: var(--font-body);
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--obsidian-black);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* Our Values: Timeline Layout */
+        .values-timeline {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+            margin-top: 3.5rem;
+            position: relative;
+        }
+
+        .values-timeline::before {
+            content: '';
+            position: absolute;
+            top: 26px;
+            left: 10%;
+            right: 10%;
+            height: 1px;
+            background: rgba(43, 43, 43, 0.25);
+            z-index: 1;
+        }
+
+        .value-node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .value-circle {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 2.2px solid rgba(43, 43, 43, 0.35);
+            color: var(--refined-brass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(13, 27, 36, 0.05);
+            transition: all var(--transition-fast);
+            margin-bottom: 1.25rem;
+        }
+
+        .value-node:hover .value-circle {
+            transform: scale(1.1);
+        }
+
+        .value-circle svg { width: 20px; height: 20px; stroke-width: 2.2; }
+
+        .value-text-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .value-title {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--obsidian-black);
+            margin-bottom: 0.5rem;
+        }
+
+        .value-desc {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--neutral-grey);
+            padding: 0 0.5rem;
+        }
+
+        /* Who We're Looking For */
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+            margin-top: 3.5rem;
+        }
+
+        .role-card {
+            background: var(--white);
+            border: 0.5px solid rgba(221, 215, 207, 0.35);
+            border-radius: 4px;
+            padding: 1.75rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            box-shadow: 0 4px 12px rgba(13, 27, 36, 0.03);
+            transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .role-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--refined-brass);
+            box-shadow: 0 8px 24px rgba(13, 27, 36, 0.06);
+        }
+
+        .role-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 4px;
+            background: rgba(43, 43, 43, 0.05);
+            color: var(--refined-brass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .role-icon svg { width: 20px; height: 20px; stroke-width: 2; }
+
+        .role-name {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            color: var(--obsidian-black);
+            font-weight: 500;
+        }
+
+        /* Life at AcreNKey: Split layout */
+        .life-split {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 4.5rem;
+            align-items: center;
+        }
+
+        .life-collage {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            position: relative;
+        }
+
+        .collage-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px rgba(13, 27, 36, 0.08);
+            object-fit: cover;
+            border: 0.5px solid rgba(221, 215, 207, 0.4);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+        }
+
+        .collage-img:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 28px rgba(13, 27, 36, 0.12);
+        }
+
+        .img-team-main {
+            grid-column: span 2;
+            height: 330px;
+            object-position: center 20%;
+        }
+
+        .img-small-1 { height: 160px; object-position: center; }
+        .img-small-2 { height: 160px; object-position: center; }
+
+        .life-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .life-desc {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: var(--neutral-grey);
+            margin-bottom: 2rem;
+        }
+
+        .life-bullets {
+            display: flex;
+            flex-direction: column;
+            gap: 1.15rem;
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .life-bullet-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .bullet-circle {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: rgba(43, 43, 43, 0.12);
+            color: var(--refined-brass);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .bullet-circle svg { width: 14px; height: 14px; stroke-width: 2.5; }
+
+        .bullet-text {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            line-height: 1.45;
+            color: var(--obsidian-black);
+            font-weight: 600;
+        }
+
+        /* Current Openings - List State */
+        .openings-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .department-section {
+            border-bottom: 0.5px solid rgba(43, 43, 43, 0.2);
+            padding-bottom: 3.5rem;
+        }
+        
+        .department-title {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--obsidian-black);
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+        
+        .roles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.25rem;
+        }
+        
+        .role-item {
+            background: var(--white);
+            border: 0.5px solid rgba(43, 43, 43, 0.2);
+            border-radius: 4px;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.4s ease;
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+        
+        .role-item:hover {
+            border-color: var(--refined-brass);
+            box-shadow: 0 4px 20px rgba(43, 43, 43, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .role-name-text {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--obsidian-black);
+        }
+        
+        .role-apply-icon {
+            color: var(--refined-brass);
+            width: 22px;
+            height: 22px;
+            transition: transform 0.4s ease;
+        }
+        
+        .role-item:hover .role-apply-icon {
+            transform: translateX(4px);
+        }
+
+        /* Current Openings - Empty State */
+        .empty-openings-card {
+            background: var(--white);
+            border: 0.5px solid rgba(43, 43, 43, 0.3);
+            border-radius: 4px;
+            padding: 4rem 3rem;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(13, 27, 36, 0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 720px;
+            margin: 2.5rem auto 0 auto;
+        }
+
+        .empty-illustration {
+            width: 140px;
+            height: auto;
+            margin-bottom: 2rem;
+            opacity: 0.85;
+        }
+
+        .empty-title {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            color: var(--obsidian-black);
+            margin-bottom: 0.75rem;
+            font-weight: 400;
+        }
+
+        .empty-desc {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--neutral-grey);
+            margin-bottom: 2rem;
+            max-width: 580px;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .careers-hero-grid {
+                padding-top: 100px;
+            }
+            .roles-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .life-split {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .values-timeline {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .values-timeline::before {
+                display: none;
+            }
+            .value-node {
+                flex-direction: row;
+                text-align: left;
+                align-items: flex-start;
+                gap: 1.25rem;
+            }
+            .value-text-block {
+                align-items: flex-start;
+                text-align: left;
+            }
+            .value-circle {
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+            .careers-section {
+                padding: var(--space-section-mobile) 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .floating-badge {
+                padding: 6px 12px;
+            }
+            .floating-badge-text {
+                font-size: 0.65rem;
+            }
+            .floating-badge-icon {
+                width: 24px;
+                height: 24px;
+            }
+            .floating-badge-icon svg {
+                width: 12px;
+                height: 12px;
+            }
+            .badge-1 { top: 8%; left: 0%; }
+            .badge-2 { bottom: 12%; right: 0%; }
+            .badge-3 { bottom: 4%; left: 4%; }
+            .roles-grid {
+                grid-template-columns: 1fr;
+            }
+            .careers-hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .careers-hero-buttons a {
+                width: 100% !important;
+            }
+            .careers-section-dark {
+                margin: 2rem 1rem;
+                padding: 3rem 1.5rem;
+            }
+            .dark-cta-buttons {
+                flex-direction: column;
+                gap: 1rem;
+                width: 100%;
+            }
+            .dark-cta-buttons a {
+                width: 100% !important;
+                text-align: center;
+                justify-content: center;
+            }
+            .life-collage {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            .img-team-main {
+                grid-column: span 2;
+                height: 220px;
+                object-position: center 20%;
+            }
+            .img-small-1 { height: 110px; }
+            .img-small-2 { height: 110px; }
+        }
+    </style><script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Careers at AcreNKey","description":"Explore open career opportunities at AcreNKey. We are hiring across marketing, engineering, real estate advisory, and operations.","url":"https://acrenkey.com/careers/","publisher":{"@type":"Organization","name":"AcreNKey","logo":{"@type":"ImageObject","url":"https://acrenkey.com/style-guide/assets/favicon.svg"}},"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://acrenkey.com/careers/executive-assistant-to-the-founder/"}]}}</script>    
+<link rel="icon" type="image/svg+xml" href="../style-guide/assets/favicon.svg">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Manrope:wght@400;500;600;700&family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKSRMW9C" height=0 width=0 style=display:none;visibility:hidden></iframe></noscript><div class="site-canvas"><header class="header-nav" id=header-nav><div class="container nav-container"><a href="/" class=nav-brand><span class=brand-logo-text>acre&amp;key</span></a><ul class=nav-links><li><a href="/#who-were-for">Who We Serve</a></li><li><a href="/#framework">Decision Framework</a></li><li><a href="/#core">CORE</a></li><li><a href="/#about-us">About Us</a></li><li><a href="/#testimonials">Testimonials</a></li></ul><a href="#" class="nav-cta-btn primary-cta-btn" onclick="window.openModal(); return false;"><span>Start Consultation</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></a><button class=mobile-toggle id=mobile-toggle-btn aria-label="Toggle Navigation Menu" aria-expanded=false><span class="hamburger-line top-line"></span><span class="hamburger-line mid-line"></span><span class="hamburger-line bot-line"></span></button></div><div class=mobile-nav-overlay id=mobile-nav-overlay aria-hidden=true></div><div class=mobile-drawer id=mobile-drawer role=dialog aria-modal=true aria-label="Navigation Menu"><div class=mobile-drawer-inner><div class=mobile-drawer-header><a href="/" class=mobile-drawer-brand aria-label="Acre and Key Home"><span class=brand-logo-text>acre&amp;key</span></a><button class=mobile-drawer-close id=mobile-drawer-close aria-label="Close Navigation Menu"><svg width=22 height=22 viewbox="0 0 24 24" fill=none stroke=var(--deep-navy) stroke-width=2 stroke-linecap=round stroke-linejoin=round><line x1=18 y1=6 x2=6 y2=18></line><line x1=6 y1=6 x2=18 y2=18></line></svg></button></div><nav class=mobile-nav-list><a href="/#who-were-for" class=mobile-nav-item><span class=mobile-nav-label>Who We Serve</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#framework" class=mobile-nav-item><span class=mobile-nav-label>Decision Framework</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#core" class=mobile-nav-item><span class=mobile-nav-label>Core</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#about-us" class=mobile-nav-item><span class=mobile-nav-label>About Us</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a><a href="/#testimonials" class=mobile-nav-item><span class=mobile-nav-label>Testimonials</span><svg class=mobile-nav-chevron width=18 height=18 viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><polyline points="9 18 15 12 9 6"></polyline></svg></a></nav><div class=mobile-drawer-footer><button type="button" class="mobile-drawer-cta primary-cta-btn" onclick="window.openModal();"><span>Start Consultation</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></button><span class=mobile-drawer-subtext>Expert Property Guidance</span><div class=mobile-drawer-socials><a href=https://www.linkedin.com/company/acrenkey/ target=_blank rel="noopener noreferrer" aria-label=LinkedIn><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a><a href=https://www.instagram.com/acrenkey/ target=_blank rel="noopener noreferrer" aria-label=Instagram><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href=https://www.youtube.com/channel/UC-6WtLxFOaR_X2y7FQTBcHw target=_blank rel="noopener noreferrer" aria-label=YouTube><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href=https://x.com/acreNkey target=_blank rel="noopener noreferrer" aria-label=Twitter/X><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 23.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a><a href="https://www.facebook.com/profile.php?id=61589792184848" target=_blank rel="noopener noreferrer" aria-label=Facebook><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a></div></div></div></div></header><main class="careers-container"><section class="careers-hero-grid"><div class="careers-hero-content"><nav aria-label="breadcrumb" style="align-self: flex-start; width: 100%; text-align: left;"><ol class="page-breadcrumb"><li><a href="/">Home</a></li><li><span class="separator">›</span></li><li class="current" aria-current="page">Careers</li></ol></nav><div class="hero-kicker"><span>Careers at AcreNKey</span></div><h1 class="careers-hero-title"> Build the Future of <span class="highlight-brass">Home Buying</span></h1><p class="careers-hero-desc"> Join a team that's making home buying more transparent, informed, and buyer-first. If you're driven by ownership, curiosity, and solving meaningful problems, you'll fit right in. </p><div class="careers-hero-buttons" style="justify-content: center;"><a href="#openings" class="sd-btn-gold" data-no-modal="true"><span>Explore Open Roles</span></a></div></div></section></main><div class="brand-divider premium-reveal"></div><section class="careers-section"><div class="careers-container"><div class="section-header" style="text-align: center;"><div class="hero-kicker" style="justify-content: center; width: 100%;"><span>OUR VALUES</span></div></div><div class="values-timeline"><div class="value-node"><div class="value-circle"><i data-feather="heart"></i></div><div class="value-text-block"><h4 class="value-title">Buyer First</h4><p class="value-desc">Every decision starts with what's best for the client.</p></div></div><div class="value-node"><div class="value-circle"><i data-feather="shield"></i></div><div class="value-text-block"><h4 class="value-title">Integrity Over Sales</h4><p class="value-desc">We value trust over transactions.</p></div></div><div class="value-node"><div class="value-circle"><i data-feather="target"></i></div><div class="value-text-block"><h4 class="value-title">Extreme Ownership</h4><p class="value-desc">We take responsibility, solve problems, and deliver results.</p></div></div><div class="value-node"><div class="value-circle"><i data-feather="book-open"></i></div><div class="value-text-block"><h4 class="value-title">Continuous Learning</h4><p class="value-desc">We stay curious, adapt quickly, and improve every day.</p></div></div><div class="value-node"><div class="value-circle"><i data-feather="check-circle"></i></div><div class="value-text-block"><h4 class="value-title">Excellence in Execution</h4><p class="value-desc">We believe great outcomes come from attention to detail and consistent execution.</p></div></div></div></div></section><div class="brand-divider premium-reveal"></div><section class="careers-section"><div class="careers-container"><div class="life-split"><div class="life-collage"><img src="../style-guide/assets/team_culture_group.webp?v=FLUSH_1791020747" alt="Acre&amp;Key Team" class="collage-img img-team-main" width="1024" height="680" loading="lazy" decoding="async"><img src="../style-guide/assets/office_culture_small_1.webp?v=FLUSH_1791020747" alt="Team Work Session" class="collage-img img-small-1" width="1376" height="768" loading="lazy" decoding="async"><img src="../style-guide/assets/office_culture_small_2.webp?v=FLUSH_1791020747" alt="Colleagues talking" class="collage-img img-small-2" width="1376" height="768" loading="lazy" decoding="async"></div><div class="life-content"><div class="hero-kicker"><span>LIFE AT ACRE&amp;KEY</span></div><h2 class="section-title">A Culture of Professional Dilemma Solvers</h2><p class="life-desc"> We work in a flat, high-trust environment where data reigns supreme and customer safety is the metric of success. Our day comprises civic diligence audits, client briefings, technology builds, and team brainstorms. </p><ul class="life-bullets"><li class="life-bullet-item"><div class="bullet-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"></path></svg></div><span class="bullet-text">Ownership: We define, shape, and deliver our own timelines.</span></li><li class="life-bullet-item"><div class="bullet-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"></path></svg></div><span class="bullet-text">Innovation: Using tech, data maps, and RERA insights to automate due diligence.</span></li><li class="life-bullet-item"><div class="bullet-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"></path></svg></div><span class="bullet-text">Learning: Constant deep-dives into property laws, architectural safety, and economics.</span></li><li class="life-bullet-item"><div class="bullet-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"></path></svg></div><span class="bullet-text">Transparency: Honest feedback inside the office translates to honest feedback for clients.</span></li><li class="life-bullet-item"><div class="bullet-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 6L9 17l-5-5"></path></svg></div><span class="bullet-text">Collaboration: Fusing engineering, advisory, operations, and analysis into one solid shield.</span></li></ul></div></div></div></section><div class="brand-divider premium-reveal" id="openings"></div><section class="careers-section"><div class="careers-container"><div class="section-header" style="text-align: center;"><div class="hero-kicker" style="justify-content: center; width: 100%;"><span>CURRENT OPENINGS</span></div><h2 class="section-title" style="text-align: center;">Explore Opportunities at <span class="brand-inline-text">acre&amp;key</span></h2></div><div class="openings-grid"><div class="department-section"><h3 class="department-title">Founder's Office</h3><div class="roles-list"><a href="/careers/executive-assistant-to-the-founder/" class="role-item" style="text-decoration: none;"><div><div class="role-name-text">EA to the founder</div></div><i data-feather="arrow-right" class="role-apply-icon"></i></a></div></div><div class="department-section"><h3 class="department-title">Sales &amp; Advisory</h3><div class="roles-list"><a href="/careers/property-consultant-inside-sales/" class="role-item" style="text-decoration: none;"><div><div class="role-name-text">Property Consultant (IS)</div></div><i data-feather="arrow-right" class="role-apply-icon"></i></a><a href="/careers/home-buyer-advisor/" class="role-item" style="text-decoration: none;"><div><div class="role-name-text">Home Buyer Advisor</div></div><i data-feather="arrow-right" class="role-apply-icon"></i></a></div></div></div></div></section><footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-main-grid">
+      <!-- Left Column: Brand, Mission, Contact & Office -->
+      <div class="footer-brand-col">
+        <a href="../" class="footer-logo-wordmark">acre&amp;key</a>
+        <div class="footer-tagline">Home Buyer Concierge</div>
+        <p class="footer-mission">
+          Independent Home Buyer Concierge in Bangalore. We advise discerning home buyers, HNI investors, and corporate leaders with strategy-consulting rigor, unbiased shortlists, and 69-point diligence.
+        </p>
+        <div class="footer-address-text">
+          8th floor, Summit A, Brigade Tech Gardens, Mahadevapura, Whitefield, Bengaluru, Karnataka 560048
+        </div>
+      </div>
+
+      <!-- Right Column: Navigation Links, Social Icons & RERA -->
+      <div class="footer-right-col">
+        <div class="footer-links-cluster">
+          <div class="footer-link-line">
+            <a href="/#property-consultant-bangalore">Property Advisory Bangalore</a>
+            <span class="footer-dot">•</span>
+            <a href="/#faq-property-consultant">Property FAQs</a>
+            <span class="footer-dot">•</span>
+            <a href="/properties/">Properties</a>
+            
+          </div>
+        </div>
+
+        <div class="footer-social-cluster">
+          <a href="https://www.facebook.com/profile.php?id=61589792184848" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></a>
+          <a href="https://www.instagram.com/acrenkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+          <a href="https://www.youtube.com/channel/UC-6WtLxFOaR_X2y7FQTBcHw" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>
+          <a href="https://x.com/acreNkey" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 23.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>
+          <a href="https://www.linkedin.com/company/acrenkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path></svg></a>
+          <a href="https://www.reddit.com/user/acreNkey/" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"></path></svg></a>
+          <a href="https://www.quora.com/profile/AcreNkey" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Quora"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.002 0C5.373 0 0 5.372 0 12.001c0 6.626 5.373 12 12.002 12 2.378 0 4.59-.693 6.452-1.891l2.458 1.837c.379.283.914.07.97-.398l.381-3.181C23.364 18.27 24 15.244 24 12.001 24 5.372 18.63 0 12.002 0zm1.758 17.587l-.297 1.801c-.05.3-.398.435-.635.251l-1.341-1.042c-.477.065-.967.101-1.487.101-4.708 0-8.525-3.031-8.525-6.697 0-3.667 3.817-6.699 8.525-6.699 4.709 0 8.527 3.032 8.527 6.699 0 1.576-.708 3.023-1.902 4.167l.117.893c.036.275-.126.541-.383.626l-2.724.8z"></path></svg></a>
+          <a href="https://pin.it/58qQo3rsD" class="footer-social-btn" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0a12 12 0 0 0-4.37 23.18c-.07-.98-.13-2.48.03-3.55l1.04-4.42s-.26-.52-.26-1.3c0-1.22.71-2.13 1.59-2.13.75 0 1.11.56 1.11 1.24 0 .75-.48 1.88-.73 2.92-.21.88.44 1.6 1.31 1.6 1.57 0 2.78-1.66 2.78-4.05 0-2.12-1.52-3.6-3.7-3.6-2.52 0-4 1.89-4 3.85 0 .76.29 1.58.66 2.02.07.09.08.17.06.26l-.25 1.02c-.04.16-.14.2-.32.12-1.19-.55-1.93-2.29-1.93-3.69 0-3 2.18-5.76 6.29-5.76 3.3 0 5.87 2.35 5.87 5.5 0 3.28-2.07 5.92-4.94 5.92-.96 0-1.87-.5-2.18-1.09l-.59 2.27c-.22.83-.8 1.88-1.19 2.51A12 12 0 1 0 12 0z"></path></svg></a>
+        </div>
+
+        <div class="footer-rera-info">
+          Karnataka RERA Registration No.:<br>
+          <strong>PRM/KA/RERA/1251/446/AG/260814/007659</strong><br>
+          Acrenkey Realty LLP
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-line">
+      <div>© 2026 Acrenkey Realty LLP. All rights reserved.</div>
+      <div class="footer-legal-links" style="display:flex; gap:1.25rem; align-items:center; flex-wrap:wrap;">
+        <a href="https://grvmon.github.io/careers" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Careers</a>
+        <a href="/privacy-policy/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Privacy Policy</a>
+        <a href="/terms-of-service/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">Terms of Service</a>
+        <a href="/rera-disclaimer/" style="color:rgba(255,255,255,0.7); text-decoration:none; font-size:0.8rem; transition:color 0.2s ease;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">RERA Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer><div class="cookie-banner-popup" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Preferences" tabindex="-1"><div class="cookie-popup-content"><div class="cookie-text-group"><p class="cookie-popup-desc"> We use cookies to improve your browsing experience and analyse website traffic. Learn more in our <a href="/privacy-policy/" class="cookie-link">Privacy Policy</a>. </p></div><div class="cookie-popup-actions"><button type="button" class="cookie-btn cookie-btn-decline" id="cookieRejectBtn">Decline</button><button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptBtn">Accept All</button></div></div></div></div><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Feather Icons Init
+            if (typeof feather !== 'undefined') {
+                feather.replace();
+            }
+
+            // Mobile Navigation Toggle Interactivity
+            const mobileToggleBtn = document.getElementById('mobile-toggle-btn');
+            const mobileDrawer = document.getElementById('mobile-drawer');
+            const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+            const mobileDrawerClose = document.getElementById('mobile-drawer-close');
+
+            function toggleDrawer() {
+                const isOpen = mobileDrawer.classList.contains('is-active');
+                if (isOpen) {
+                    mobileDrawer.classList.remove('is-active');
+                    mobileNavOverlay.classList.remove('is-active');
+                    mobileToggleBtn.classList.remove('is-active');
+                    document.body.classList.remove('drawer-open');
+                } else {
+                    mobileDrawer.classList.add('is-active');
+                    mobileNavOverlay.classList.add('is-active');
+                    mobileToggleBtn.classList.add('is-active');
+                    document.body.classList.add('drawer-open');
+                }
+            }
+
+            if (mobileToggleBtn) mobileToggleBtn.addEventListener('click', toggleDrawer);
+            if (mobileDrawerClose) mobileDrawerClose.addEventListener('click', toggleDrawer);
+            if (mobileNavOverlay) mobileNavOverlay.addEventListener('click', toggleDrawer);
+
+            // FAQ Accordion Interactivity
+            const accordions = document.querySelectorAll('.faq-item');
+            accordions.forEach(item => {
+                const button = item.querySelector('.faq-header-btn');
+                const content = item.querySelector('.faq-content');
+                
+                button.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close all other items
+                    accordions.forEach(el => {
+                        el.classList.remove('active');
+                        el.querySelector('.faq-header-btn').setAttribute('aria-expanded', 'false');
+                        el.querySelector('.faq-content').style.maxHeight = null;
+                    });
+                    
+                    if (!isActive) {
+                        item.classList.add('active');
+                        button.setAttribute('aria-expanded', 'true');
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+
+            // Cookie Consent Popup Interaction
+            const cookieBanner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('cookieAcceptBtn');
+            const rejectBtn = document.getElementById('cookieRejectBtn');
+
+            if (!sessionStorage.getItem('ackey_cookie_consent_session')) {
+                setTimeout(function() {
+                    if (cookieBanner) {
+                        cookieBanner.classList.add('active');
+                    }
+                }, 600);
+            }
+
+            function dismissCookieBanner() {
+                if (cookieBanner) {
+                    cookieBanner.classList.remove('active');
+                }
+                sessionStorage.setItem('ackey_cookie_consent_session', 'true');
+            }
+
+            if (acceptBtn) acceptBtn.addEventListener('click', dismissCookieBanner);
+            if (rejectBtn) rejectBtn.addEventListener('click', dismissCookieBanner);
+        });
+    </script><script src="../website.min.js?v=FLUSH_1791020747" defer=""></script><div class="lf-modal-overlay" id="lfModalOverlay"><div class="lf-cc-backdrop" id="lfCcBackdrop"></div><div class="lf-wrap" id="lfWrap" role="dialog" aria-modal="true" aria-labelledby="lfMainHeading" aria-describedby="lfSubHeading"><div class="lf-drag-handle"></div><button type="button" class="lf-modal-close-icon lf-focusable" id="lfModalClose" aria-label="Close modal window" tabindex="0"><svg viewBox="0 0 14 14" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" d="M1 1l12 12M13 1L1 13"></path></svg></button><div id="lfModalFormContent"><div class="lf-header"><h2 class="lf-main-heading" id="lfMainHeading">Speak to a Home Buying Expert</h2><p class="lf-sub-heading" id="lfSubHeading">Tell us what you're looking for, and our advisors will help you shortlist, evaluate, and negotiate the right property.</p></div><form class="lf-form" id="lfForm" novalidate=""><input class="lf-hp" type="text" name="website" value="" tabindex="-1" autocomplete="off" aria-hidden="true"><input type="hidden" id="lfGclid" name="gclid"><input type="hidden" id="lfFclid" name="fclid"><input type="hidden" id="lfUtmSource" name="utm_source"><input type="hidden" id="lfUtmMedium" name="utm_medium"><input type="hidden" id="lfUtmCampaign" name="utm_campaign"><input type="hidden" id="lfUtmTerm" name="utm_term"><input type="hidden" id="lfUtmContent" name="utm_content"><input type="hidden" id="lfSourceUrl" name="source_url"><input type="hidden" id="lfSubmittedAt" name="submitted_at"><div class="lf-field" id="lfNameField"><div class="lf-input-box"><label class="lf-label" for="lfName">Full name<span class="lf-req" aria-hidden="true">*</span></label><input class="lf-input lf-focusable" type="text" id="lfName" name="name" autocomplete="name" enterkeyhint="next" aria-required="true" tabindex="0" aria-invalid="false" maxlength="60" aria-describedby="lfNameErr"><span class="lf-valid-icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M1 7l4 4 8-8"></path></svg></span><button type="button" class="lf-clear-btn lf-focusable" aria-label="Clear name field" tabindex="-1"><svg viewBox="0 0 10 10" fill="none"><path stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M1 1l8 8M9 1L1 9"></path></svg></button></div><div class="lf-err" id="lfNameErr" role="alert"></div></div><div class="lf-field lf-field-phone" id="lfPhoneField"><div class="lf-input-box"><label class="lf-label" id="lfPhoneLbl" for="lfPhone">Mobile<span class="lf-req" aria-hidden="true">*</span></label><div class="lf-phone-row"><button type="button" class="lf-cc-trigger lf-focusable" id="lfCcTrigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="lfCcPanel" aria-label="Select country dial code" tabindex="0"><span id="lfCcDisplay">+91</span><svg class="lf-cc-arrow" viewBox="0 0 8 5" fill="none"><path stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M1 1l3 3 3-3"></path></svg></button><div class="lf-cc-panel" id="lfCcPanel" role="listbox" aria-labelledby="lfPhoneLbl"><input class="lf-cc-search lf-focusable" type="text" id="lfCcSearch" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-controls="lfCcList" placeholder="Search country..." autocomplete="off" aria-label="Search countries by name or code" tabindex="-1"><div class="lf-cc-list" id="lfCcList"></div></div><input type="hidden" id="lfCcVal" name="country_code" value="+91"><div class="lf-divider"></div><input class="lf-input lf-focusable" type="tel" id="lfPhone" name="phone" inputmode="numeric" autocomplete="tel" enterkeyhint="next" aria-required="true" tabindex="0" aria-invalid="false" maxlength="15" aria-describedby="lfPhoneErr"><span class="lf-valid-icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M1 7l4 4 8-8"></path></svg></span><button type="button" class="lf-clear-btn lf-focusable" id="lfPhoneClearBtn" aria-label="Clear mobile number field" tabindex="-1"><svg viewBox="0 0 10 10" fill="none"><path stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M1 1l8 8M9 1L1 9"></path></svg></button></div></div><div class="lf-err" id="lfPhoneErr" role="alert"></div></div><div class="lf-field" id="lfEmailField"><div class="lf-input-box"><label class="lf-label" for="lfEmail">Email<span class="lf-req" aria-hidden="true">*</span></label><input class="lf-input lf-focusable" type="email" id="lfEmail" name="email" autocomplete="email" enterkeyhint="done" aria-required="true" tabindex="0" aria-invalid="false" maxlength="120" aria-describedby="lfEmailErr"><span class="lf-valid-icon" aria-hidden="true"><svg viewBox="0 0 14 14" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M1 7l4 4 8-8"></path></svg></span><button type="button" class="lf-clear-btn lf-focusable" aria-label="Clear email field" tabindex="-1"><svg viewBox="0 0 10 10" fill="none"><path stroke="currentColor" stroke-width="1.2" stroke-linecap="round" d="M1 1l8 8M9 1L1 9"></path></svg></button></div><div class="lf-err" id="lfEmailErr" role="alert"></div></div><div class="lf-submit-wrap"><button type="submit" class="lf-btn lf-focusable primary-cta-btn" id="lfSubmitBtn" tabindex="0"><div class="lf-spinner"></div><span id="lfBtnText">Schedule Advisory Call</span><span class="cta-arrow-badge" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4.5" y1="11.5" x2="11.5" y2="4.5"></line><polyline points="6.5 4.5 11.5 4.5 11.5 9.5"></polyline></svg></span></button><p class="lf-privacy-consent" style="font-size: 0.75rem; color: #64748b; margin-top: 12px; text-align: center; line-height: 1.4;"> By submitting your details, you agree to our <a href="/privacy-policy/" style="text-decoration: underline; color: inherit;">Privacy Policy</a>. </p><p class="lf-global-err" id="lfGlobalErr" role="alert" aria-live="assertive" aria-atomic="true">Connection issue. Your details are safely held — please click Submit once more to retry or reach out to support.</p></div></form></div></div></div><script src="../lead-form.min.js?v=FLUSH_1791020747" defer=""></script><script src="../abha-form.min.js?v=FLUSH_1791020747" defer=""></script></body></html>
