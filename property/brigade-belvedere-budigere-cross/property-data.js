@@ -51,6 +51,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b91.98 Cr",
       "target_buyer_persona": "Growing Families"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "10.7 Acres (Detailed Scheme)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": "80%"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "5 Towers (Detailed Scheme)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "1,750 Homes (Detailed Scheme)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "~75,000 sq.ft. (Reported)"
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "point_id": "brigade-belvedere-budigere-cross-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (Brigade)",
+      "body": "Backed by Brigade, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "point_id": "brigade-belvedere-budigere-cross-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in Budigere Cross, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "point_id": "brigade-belvedere-budigere-cross-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "faq_id": "brigade-belvedere-budigere-cross-faq-1",
+      "question": "What is the starting price of Brigade Belvedere?",
+      "answer": "The starting price for residences at Brigade Belvedere is \u20b90.93 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "faq_id": "brigade-belvedere-budigere-cross-faq-2",
+      "question": "What is the RERA registration number of Brigade Belvedere?",
+      "answer": "The RERA registration number for Brigade Belvedere is RERA Completion Target: 31 March 2031."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "brigade-belvedere-budigere-cross",
+      "faq_id": "brigade-belvedere-budigere-cross-faq-3",
+      "question": "When is the possession date for Brigade Belvedere?",
+      "answer": "The target possession date for Brigade Belvedere is 31 March 2031."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'brigade-belvedere-budigere-cross';

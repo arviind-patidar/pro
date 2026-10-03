@@ -51,6 +51,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b91.98 Cr",
       "target_buyer_persona": "Growing Families"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "4.1 Acres"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": "77%"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "4 Towers"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "368 Units (Reported)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "~21,000 sq.ft. (Reported)"
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "point_id": "sumadhura-capitol-residences-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (Sumadhura Group)",
+      "body": "Backed by Sumadhura Group, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "point_id": "sumadhura-capitol-residences-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in Hope Farm / ITPL Main Road, Whitefield, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "point_id": "sumadhura-capitol-residences-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "faq_id": "sumadhura-capitol-residences-faq-1",
+      "question": "What is the starting price of Sumadhura Capitol Residences?",
+      "answer": "The starting price for residences at Sumadhura Capitol Residences is \u20b92.55 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "faq_id": "sumadhura-capitol-residences-faq-2",
+      "question": "What is the RERA registration number of Sumadhura Capitol Residences?",
+      "answer": "The RERA registration number for Sumadhura Capitol Residences is Reported RERA Completion: 30 December 2027."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-capitol-residences",
+      "faq_id": "sumadhura-capitol-residences-faq-3",
+      "question": "When is the possession date for Sumadhura Capitol Residences?",
+      "answer": "The target possession date for Sumadhura Capitol Residences is 30 December 2027."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'sumadhura-capitol-residences';

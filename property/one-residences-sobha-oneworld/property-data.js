@@ -51,6 +51,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b91.98 Cr",
       "target_buyer_persona": "Growing Families"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "48 Acres"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": "5 Themed Zones"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "14 Towers"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "3,484 Homes"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "~100,000 sq.ft. (Reported)"
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "point_id": "one-residences-sobha-oneworld-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (SOBHA)",
+      "body": "Backed by SOBHA, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "point_id": "one-residences-sobha-oneworld-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in OMR / Greater Whitefield, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "point_id": "one-residences-sobha-oneworld-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "faq_id": "one-residences-sobha-oneworld-faq-1",
+      "question": "What is the starting price of One Residences at SOBHA OneWorld?",
+      "answer": "The starting price for residences at One Residences at SOBHA OneWorld is \u20b91.10 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "faq_id": "one-residences-sobha-oneworld-faq-2",
+      "question": "What is the RERA registration number of One Residences at SOBHA OneWorld?",
+      "answer": "The RERA registration number for One Residences at SOBHA OneWorld is July 2032 \u2013 September 2033 (across 6 RERA phases)."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "one-residences-sobha-oneworld",
+      "faq_id": "one-residences-sobha-oneworld-faq-3",
+      "question": "When is the possession date for One Residences at SOBHA OneWorld?",
+      "answer": "The target possession date for One Residences at SOBHA OneWorld is July 2032 \u2013 Sept 2033."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'one-residences-sobha-oneworld';

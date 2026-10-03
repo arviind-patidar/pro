@@ -51,6 +51,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b91.98 Cr",
       "target_buyer_persona": "Growing Families"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "~15 Acres (Residential)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": ">70%"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "3 Towers (Primary Table)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "1,330 Homes"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "~2,200 sq.ft. / 100 Homes"
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-cloud-forest-alembic-city-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (Alembic)",
+      "body": "Backed by Alembic, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-cloud-forest-alembic-city-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in At Alembic City \u00b7 Kadugodi / Hope Farm, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-cloud-forest-alembic-city-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-1",
+      "question": "What is the starting price of Alembic Cloud Forest at Alembic City?",
+      "answer": "The starting price for residences at Alembic Cloud Forest at Alembic City is \u20b92.20 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-2",
+      "question": "What is the RERA registration number of Alembic Cloud Forest at Alembic City?",
+      "answer": "The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target: 1 October 2029."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-3",
+      "question": "When is the possession date for Alembic Cloud Forest at Alembic City?",
+      "answer": "The target possession date for Alembic Cloud Forest at Alembic City is 1 October 2029."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'alembic-cloud-forest-alembic-city';

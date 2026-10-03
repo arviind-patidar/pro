@@ -51,6 +51,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b91.98 Cr",
       "target_buyer_persona": "Growing Families"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "20 Acres"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": "76%"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "11 Towers (2B+G+18)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "~1,650 Residences (2 Phases)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "66,000 sq.ft. (Reported)"
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "point_id": "sumadhura-edition-whitefield-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (Sumadhura Group)",
+      "body": "Backed by Sumadhura Group, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "point_id": "sumadhura-edition-whitefield-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in Siddapura, Core Whitefield, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "point_id": "sumadhura-edition-whitefield-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "faq_id": "sumadhura-edition-whitefield-faq-1",
+      "question": "What is the starting price of Sumadhura Edition?",
+      "answer": "The starting price for residences at Sumadhura Edition is \u20b92.06 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "faq_id": "sumadhura-edition-whitefield-faq-2",
+      "question": "What is the RERA registration number of Sumadhura Edition?",
+      "answer": "The RERA registration number for Sumadhura Edition is Phase-I RERA Completion: 31 December 2029."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-edition-whitefield",
+      "faq_id": "sumadhura-edition-whitefield-faq-3",
+      "question": "When is the possession date for Sumadhura Edition?",
+      "answer": "The target possession date for Sumadhura Edition is 31 December 2029."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'sumadhura-edition-whitefield';

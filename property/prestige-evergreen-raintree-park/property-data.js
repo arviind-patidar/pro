@@ -99,6 +99,92 @@ window.PROPERTY_DATA = {
       "on_road_estimate": "\u20b93.78 \u2013 4.19 Cr",
       "target_buyer_persona": "Multi-generational families & senior executives"
     }
+  ],
+  "glance_stats": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "stat_key": "land_parcel",
+      "stat_label": "Land Area",
+      "stat_value": "24 Acres (Precinct)"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "stat_key": "open_space",
+      "stat_label": "Open Space",
+      "stat_value": "70% Landscaped"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "stat_key": "towers_count",
+      "stat_label": "Total Towers",
+      "stat_value": "14 Towers"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "stat_key": "residences_count",
+      "stat_label": "Residences",
+      "stat_value": "~2,000 Residences"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "stat_key": "clubhouse_size",
+      "stat_label": "Clubhouse Size",
+      "stat_value": "~86,000 sq.ft."
+    }
+  ],
+  "content_points": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "point_id": "prestige-evergreen-raintree-park-strength-1",
+      "kind": "strength",
+      "title": "Institutional Developer Backing (Prestige Group)",
+      "body": "Backed by Prestige Group, ensuring high execution capability, clear legal titles, and strong resale demand."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "point_id": "prestige-evergreen-raintree-park-strength-2",
+      "kind": "strength",
+      "title": "Prime Connectivity & Infrastructure",
+      "body": "Strategically positioned in Varthur Junction, Whitefield Precinct, Bengaluru with quick access to major IT parks and arterial metro lines."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "point_id": "prestige-evergreen-raintree-park-watch-1",
+      "kind": "watch",
+      "title": "Peak Hour Traffic Management",
+      "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    }
+  ],
+  "faqs": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "prestige-evergreen-raintree-park-faq-1",
+      "question": "What is the starting price of Evergreen at Prestige Raintree Park?",
+      "answer": "The starting price for residences at Evergreen at Prestige Raintree Park is \u20b91.07 Cr*."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "prestige-evergreen-raintree-park-faq-2",
+      "question": "What is the RERA registration number of Evergreen at Prestige Raintree Park?",
+      "answer": "The RERA registration number for Evergreen at Prestige Raintree Park is PRM/KA/RERA/1251/446/PR/010126/008374 | Target: 30 June 2030."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "prestige-evergreen-raintree-park-faq-3",
+      "question": "When is the possession date for Evergreen at Prestige Raintree Park?",
+      "answer": "The target possession date for Evergreen at Prestige Raintree Park is 30 June 2030."
+    }
   ]
 };
 window.PROPERTY_SLUG = 'prestige-evergreen-raintree-park';
