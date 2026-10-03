@@ -131,7 +131,7 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     # Price string replacement
     price_display_str = min_price if 'Cr' in str(min_price) else f'₹{min_price} Lakhs*'
     if min_price and max_price and max_price != min_price:
-        price_display_str = f'{min_price} – {max_price}'
+        price_display_str = f'₹{min_price} – {max_price}' if not str(min_price).startswith('₹') else f'{min_price} – {max_price}'
     html = re.sub(r'₹1\.07\s*–\s*4\.09\s*Cr', price_display_str, html)
 
     # PSF Rate replacement
@@ -146,8 +146,8 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     if rera_id:
         html = html.replace('PRM/KA/RERA/1251/446/PR/010126/008374', rera_id)
     if possession_date:
-        html = html.replace('30 June 2030', possession_date)
-        html = html.replace('June 2030', possession_date)
+        html = re.sub(r'30\s+June\s+2030', possession_date, html)
+        html = re.sub(r'June\s+2030', possession_date, html)
 
     # At-a-Glance Strip replacement (5 stats from Glance_Stats tab)
     if prop_glance:
