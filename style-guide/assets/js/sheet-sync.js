@@ -70,14 +70,20 @@
 
     try {
       // 1. Fetch Master Sheet Data
-      const [props, phases, configs, glanceStats, contentPoints, faqs, devs] = await Promise.all([
+      const [props, phases, configs, glanceStats, contentPoints, faqs, devs, amenities, commutes, costLines, floorPlans, gallery, scorePillars] = await Promise.all([
         fetchSheetTab('Properties'),
         fetchSheetTab('Phases').catch(() => []),
         fetchSheetTab('Configurations').catch(() => []),
         fetchSheetTab('Glance_Stats').catch(() => []),
         fetchSheetTab('Content_Points').catch(() => []),
         fetchSheetTab('FAQs').catch(() => []),
-        fetchSheetTab('Developers').catch(() => [])
+        fetchSheetTab('Developers').catch(() => []),
+        fetchSheetTab('Amenities').catch(() => []),
+        fetchSheetTab('Commutes').catch(() => []),
+        fetchSheetTab('Cost_Lines').catch(() => []),
+        fetchSheetTab('Floor_Plans').catch(() => []),
+        fetchSheetTab('Gallery').catch(() => []),
+        fetchSheetTab('Score_Pillars').catch(() => [])
       ]);
 
       const targetProp = props.find(p => p.slug === slug || p.property_id === slug);
@@ -94,6 +100,11 @@
       const propGlance = glanceStats.filter(g => g.property_id === propId || g.property_id === slug);
       const propPoints = contentPoints.filter(cp => cp.property_id === propId || cp.property_id === slug);
       const propFaqs = faqs.filter(f => f.property_id === propId || f.property_id === slug);
+      const propAmenities = amenities.filter(a => a.property_id === propId || a.property_id === slug);
+      const propCommutes = commutes.filter(cm => cm.property_id === propId || cm.property_id === slug);
+      const propCosts = costLines.filter(cl => cl.property_id === propId || cl.property_id === slug);
+      const propFloorPlans = floorPlans.filter(fp => fp.property_id === propId || fp.property_id === slug);
+      const propPillars = scorePillars.filter(sp => sp.property_id === propId || sp.property_id === slug);
 
       // --- SECTION 1: HERO & METADATA ---
       if (targetProp.display_name) {
@@ -194,20 +205,67 @@
         }
       }
 
-      // --- SECTION 5: FAQS (FAQs Tab) ---
-      if (propFaqs.length > 0) {
-        const faqAccordion = document.querySelector('#faqs-accordion, .prop-faq-accordion');
-        if (faqAccordion) {
+      // --- SECTION 5: AMENITIES GRID (Amenities Tab) ---
+      if (propAmenities.length > 0) {
+        const amGrid = document.querySelector('#amenities .ak-amenities-grid, .ak-amenities-grid');
+        if (amGrid) {
           let htmlStr = '';
-          propFaqs.forEach((faq, idx) => {
+          propAmenities.forEach(am => {
+            const icon = am.icon_name || 'check-circle';
             htmlStr += `
-              <div class="faq-item" style="border-bottom: 0.5px solid #E5E0D8; padding: 1rem 0;">
-                <h4 style="font-size: 0.95rem; font-weight: 700; color: #1C1C1E; margin-bottom: 0.35rem;">Q${idx + 1}: ${faq.question}</h4>
-                <p style="font-size: 0.85rem; color: #374151; line-height: 1.5; margin: 0;">${faq.answer}</p>
+              <div style="background:#FFFFFF; border:0.5px solid #E5E0D8; border-radius:4px; padding:1.25rem; display:flex; gap:1rem; align-items:flex-start;">
+                <div style="width:38px; height:38px; border-radius:50%; background:rgba(140, 103, 52, 0.1); color:#8C6734; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                  <i data-feather="${icon}" style="width:18px; height:18px;"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:0.95rem; font-weight:700; color:#1C1C1E; margin:0 0 0.35rem 0;">${am.amenity_name || ''}</h4>
+                  <p style="font-size:0.85rem; color:#374151; margin:0; line-height:1.5;">${am.description || ''}</p>
+                </div>
               </div>
             `;
           });
-          faqAccordion.innerHTML = htmlStr;
+          amGrid.innerHTML = htmlStr;
+        }
+      }
+
+      // --- SECTION 6: COMMUTES TABLE (Commutes Tab) ---
+      if (propCommutes.length > 0) {
+        const cmTableBody = document.querySelector('#location table tbody');
+        if (cmTableBody) {
+          let htmlStr = '';
+          propCommutes.forEach(cm => {
+            htmlStr += `
+              <tr style="border-bottom:0.5px solid #FAFAFA;">
+                <td style="padding:0.85rem 1.25rem; font-weight:700; color:#1C1C1E;">${cm.destination || ''}</td>
+                <td style="padding:0.85rem 1.25rem; color:#374151;">${(cm.category || '').toUpperCase()}</td>
+                <td style="padding:0.85rem 1.25rem; font-weight:600; color:#8C6734;">${cm.distance_km || ''}</td>
+                <td style="padding:0.85rem 1.25rem; font-weight:700; color:#10B981; text-align:right;">${cm.travel_time_mins || ''}</td>
+              </tr>
+            `;
+          });
+          cmTableBody.innerHTML = htmlStr;
+        }
+      }
+
+      // --- SECTION 7: FAQS (FAQs Tab) ---
+      if (propFaqs.length > 0) {
+        const faqContainer = document.querySelector('#faqs div[style*="display:flex"]');
+        if (faqContainer) {
+          let htmlStr = '';
+          propFaqs.forEach((faq) => {
+            htmlStr += `
+              <details style="background:#FFFFFF; border:0.5px solid #E5E0D8; border-radius: 4px; padding:1.15rem 1.35rem; transition:all 0.2s ease;">
+                <summary style="font-weight:700; color:#1C1C1E; font-size:0.98rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+                  <span>${faq.question}</span>
+                  <span style="color:#8C6734; font-size:1.2rem; font-weight:300;">+</span>
+                </summary>
+                <div style="font-size:0.88rem; color:#374151; margin-top:0.65rem; line-height:1.65; border-top:0.5px solid rgba(140, 103, 52,0.15); padding-top:0.65rem;">
+                  ${faq.answer}
+                </div>
+              </details>
+            `;
+          });
+          faqContainer.innerHTML = htmlStr;
         }
       }
 

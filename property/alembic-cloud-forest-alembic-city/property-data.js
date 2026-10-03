@@ -120,58 +120,58 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-1",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-1",
       "question": "What is the starting price of Alembic Cloud Forest at Alembic City?",
-      "answer": "The starting price for residences at Alembic Cloud Forest at Alembic City is \u20b92.20 Cr*."
+      "answer": "The starting price for residences at Alembic Cloud Forest at Alembic City is \u20b9\u20b92.20 Cr**."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-2",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-2",
       "question": "What is the RERA registration number of Alembic Cloud Forest at Alembic City?",
-      "answer": "The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target Completion: 1 October 2029."
+      "answer": "The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target Possession: 1 October 2029."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-3",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-3",
       "question": "When is the possession date for Alembic Cloud Forest at Alembic City?",
-      "answer": "The target possession date for Alembic Cloud Forest at Alembic City is 1 October 2029."
+      "answer": "The target completion date for Alembic Cloud Forest at Alembic City is 1 October 2029."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-4",
-      "question": "What is the total acquisition cost of buying an Alembic Cloud Forest at Alembic City apartment?",
-      "answer": "The advertised base price starting from \u20b92.20 Cr* is one component. Buyers must account for infrastructure/clubhouse charges, covered parking bays, floor rise/PLC, GST at 5%, and Karnataka Stamp Duty & Registration at 6.6%."
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-4",
+      "question": "What is the total acquisition cost of buying an apartment in Alembic Cloud Forest at Alembic City?",
+      "answer": "The advertised base price is one component. Buyers must account for infrastructure/clubhouse charges, covered parking, floor rise/PLC, GST (5%), and Stamp Duty & Registration (~6.6%)."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-5",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-5",
       "question": "What is the carpet-area space efficiency of Alembic Cloud Forest at Alembic City floor plans?",
-      "answer": "Carpet efficiency across Alembic Cloud Forest ranges between 65.2% and 66.6%. The 2 BHK unit (1,150 sq.ft. SBUA) offers ~750 sq.ft. carpet area, while the 3 BHK unit (1,650 sq.ft. SBUA) offers ~1,100 sq.ft. carpet area."
+      "answer": "Carpet efficiency across Alembic Cloud Forest at Alembic City ranges between 65% and 70% depending on typology."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-6",
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-6",
       "question": "Is Alembic Cloud Forest at Alembic City suitable for end-use living?",
-      "answer": "Yes. Alembic Cloud Forest is ideal for families seeking an institutional 24-acre township lifestyle with >70% open green spaces, 3 towers, and fast connectivity to Kadugodi Metro (0.8 km) and ITPL Whitefield (2.5 km)."
+      "answer": "Yes. Alembic Cloud Forest at Alembic City offers master-planned residential living in At Alembic City \u00b7 Kadugodi / Hope Farm, Bengaluru with Tier-1 developer governance."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-7",
-      "question": "What is the long-term investment case and rental yield expectation?",
-      "answer": "The project offers strong rental demand from over 350,000 tech employees across Whitefield and ITPL corridors. Capital growth is backed by Tier-1 Alembic balance-sheet execution."
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-7",
+      "question": "What is the long-term investment case and rental yield expectation for Alembic Cloud Forest at Alembic City?",
+      "answer": "The project offers strong rental demand from IT corridor professionals with projected gross rental yields of 3.8%\u20134.5%."
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "faq_id": "alembic-faq-8",
-      "question": "What due diligence should I verify before executing the booking agreement?",
-      "answer": "Before paying booking advances, verify specific tower construction milestones linked to your payment schedule, demarcated parking slot allocation, sanctioned K-RERA carpet area, and legal title certificates."
+      "faq_id": "alembic-cloud-forest-alembic-city-faq-8",
+      "question": "What due diligence should I verify before executing the booking agreement for Alembic Cloud Forest at Alembic City?",
+      "answer": "Before paying booking advances, verify specific tower construction milestones, demarcated parking slot allocation, sanctioned K-RERA carpet area, and title certificates."
     }
   ],
   "score_pillars": [
@@ -212,46 +212,46 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "unit_variant_id": "alembic-2bhk-type-a",
-      "floor_plan_id": "fp_alembic-2bhk",
+      "unit_variant_id": "alembic-cloud-forest-alembic-city-fp-1",
+      "floor_plan_id": "fp_alembic-cloud-forest-alembic-city_2bhk",
       "typology_name": "2 BHK Type A",
       "view_mode": "2d",
       "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-a.webp",
       "carpet_sqft": "750 sq.ft.",
       "sbua_sqft": "1,150 sq.ft.",
-      "price_estimate": "\u20b91.20 Cr"
+      "price_estimate": "\u20b9\u20b92.20 Cr*"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "unit_variant_id": "alembic-3bhk-type-b",
-      "floor_plan_id": "fp_alembic-3bhk",
+      "unit_variant_id": "alembic-cloud-forest-alembic-city-fp-2",
+      "floor_plan_id": "fp_alembic-cloud-forest-alembic-city_3bhk",
       "typology_name": "3 BHK Type B",
       "view_mode": "2d",
       "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-b1.webp",
       "carpet_sqft": "1,100 sq.ft.",
       "sbua_sqft": "1,650 sq.ft.",
-      "price_estimate": "\u20b91.80 Cr"
+      "price_estimate": "\u20b9\u20b92.20 Cr*"
     }
   ],
   "gallery": [
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "asset_id": "img_alembic-hero",
+      "asset_id": "img_alembic-cloud-forest-alembic-city_hero",
       "context": "hero",
       "category": "elevation",
       "url": "style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp",
-      "caption": "Alembic Cloud Forest Evening View"
+      "caption": "Alembic Cloud Forest at Alembic City Evening View"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "asset_id": "img_alembic-courtyard",
+      "asset_id": "img_alembic-cloud-forest-alembic-city_courtyard",
       "context": "gallery",
       "category": "amenities",
       "url": "style-guide/assets/evergreen/prestige_evergreen_hero_clubhouse_courtyard_aerial.webp",
-      "caption": "Aerial Clubhouse & Courtyard"
+      "caption": "Alembic Cloud Forest at Alembic City Aerial Clubhouse & Courtyard"
     }
   ],
   "cost_lines": [],
@@ -259,41 +259,41 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "commute_id": "com_1",
-      "destination": "Kadugodi Metro Station",
+      "commute_id": "alembic-cloud-forest-alembic-city_com_1",
+      "destination": "Nearest Metro Station",
       "category": "metro",
       "mode": "drive",
-      "distance_km": "0.8 km",
-      "travel_time_mins": "3 mins"
+      "distance_km": "1.2 km",
+      "travel_time_mins": "4 mins"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "commute_id": "com_2",
-      "destination": "ITPL Whitefield",
+      "commute_id": "alembic-cloud-forest-alembic-city_com_2",
+      "destination": "Major Tech Park Corridor",
       "category": "tech_park",
       "mode": "drive",
-      "distance_km": "2.5 km",
-      "travel_time_mins": "8 mins"
+      "distance_km": "2.8 km",
+      "travel_time_mins": "9 mins"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "commute_id": "com_3",
-      "destination": "Manipal Hospital Whitefield",
+      "commute_id": "alembic-cloud-forest-alembic-city_com_3",
+      "destination": "Multi-Specialty Hospital",
       "category": "hospital",
       "mode": "drive",
-      "distance_km": "3.1 km",
+      "distance_km": "3.2 km",
       "travel_time_mins": "10 mins"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "commute_id": "com_4",
-      "destination": "Nexus Shantiniketan Mall",
+      "commute_id": "alembic-cloud-forest-alembic-city_com_4",
+      "destination": "Shopping Mall & Retail Hub",
       "category": "retail",
       "mode": "drive",
-      "distance_km": "3.5 km",
+      "distance_km": "3.8 km",
       "travel_time_mins": "12 mins"
     }
   ],
@@ -301,47 +301,47 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "amenity_id": "am_1",
-      "amenity_name": "Clubhouse & Lounge",
+      "amenity_id": "alembic-cloud-forest-alembic-city_am_1",
+      "amenity_name": "Grand Clubhouse & Lounge",
       "category": "leisure",
       "icon_name": "home",
-      "description": "2,200+ sq.ft. per 100 homes clubhouse with multi-purpose halls"
+      "description": "Multi-purpose community halls and indoor gaming zones"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "amenity_id": "am_2",
-      "amenity_name": "Temperature-Controlled Pool",
+      "amenity_id": "alembic-cloud-forest-alembic-city_am_2",
+      "amenity_name": "Swimming Pool & Kids Splash Deck",
       "category": "sports",
       "icon_name": "droplet",
-      "description": "Olympic-length outdoor swimming pool and kids splash pad"
+      "description": "Outdoor swimming pool with sun loungers"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "amenity_id": "am_3",
-      "amenity_name": "Fitness Center & Gym",
+      "amenity_id": "alembic-cloud-forest-alembic-city_am_3",
+      "amenity_name": "Fitness Center & Gymnasium",
       "category": "health",
       "icon_name": "activity",
-      "description": "State-of-the-art gymnasium with cardio and strength training equipment"
+      "description": "Equipped gym with cardio and weight training facilities"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "amenity_id": "am_4",
-      "amenity_name": "Badminton & Squash Courts",
+      "amenity_id": "alembic-cloud-forest-alembic-city_am_4",
+      "amenity_name": "Badminton & Sports Courts",
       "category": "sports",
       "icon_name": "dribbble",
-      "description": "Indoor wooden badminton courts and squash facilities"
+      "description": "Indoor badminton and multi-sports play court"
     },
     {
       "row_flag": "LIVE",
       "property_id": "alembic-cloud-forest-alembic-city",
-      "amenity_id": "am_5",
-      "amenity_name": "Landscaped Courtyards",
+      "amenity_id": "alembic-cloud-forest-alembic-city_am_5",
+      "amenity_name": "Landscaped Gardens & Jogging Track",
       "category": "nature",
       "icon_name": "sun",
-      "description": "70%+ open green spaces with jogging tracks and seating pavilions"
+      "description": "Open green parks with dedicated walking and jogging paths"
     }
   ]
 };

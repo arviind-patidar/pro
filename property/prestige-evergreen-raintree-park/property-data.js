@@ -168,58 +168,58 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-1",
-      "question": "Is Evergreen at Prestige Raintree Park RERA registered?",
-      "answer": "Yes. Evergreen @ Prestige Raintree Park is registered under Karnataka RERA with registration number PRM/KA/RERA/1251/446/PR/010126/008374, with a completion target of 30 June 2030."
+      "faq_id": "prestige-evergreen-raintree-park-faq-1",
+      "question": "What is the starting price of Evergreen at Prestige Raintree Park?",
+      "answer": "The starting price for residences at Evergreen at Prestige Raintree Park is \u20b9\u20b91.07 Cr**."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-2",
-      "question": "What is the total acquisition cost of buying in Evergreen at Prestige Raintree Park?",
-      "answer": "While base rates range from \u20b915,500 to \u20b916,300/sq.ft., all-inclusive on-road acquisition costs range from approximately \u20b91.07 Cr for 1 BHK up to \u20b94.09 Cr+ for 4 BHK, factoring in floor rise, PLC, parking, infrastructure, GST (5%), and stamp duty/registration (~6.6%)."
+      "faq_id": "prestige-evergreen-raintree-park-faq-2",
+      "question": "What is the RERA registration number of Evergreen at Prestige Raintree Park?",
+      "answer": "The RERA registration number for Evergreen at Prestige Raintree Park is PRM/KA/RERA/1251/446/PR/010126/008374 | Target Possession: 30 June 2030."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-3",
-      "question": "What is the carpet-area space efficiency of Evergreen floor plans?",
-      "answer": "Carpet efficiency across Evergreen ranges between 66.5% and 69.8% depending on typology. The 1 BHK unit (976 sq.ft. SBA) offers ~659 sq.ft. RERA carpet (67.5% efficiency)."
+      "faq_id": "prestige-evergreen-raintree-park-faq-3",
+      "question": "When is the possession date for Evergreen at Prestige Raintree Park?",
+      "answer": "The target completion date for Evergreen at Prestige Raintree Park is 30 June 2030."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-4",
+      "faq_id": "prestige-evergreen-raintree-park-faq-4",
+      "question": "What is the total acquisition cost of buying an apartment in Evergreen at Prestige Raintree Park?",
+      "answer": "The advertised base price is one component. Buyers must account for infrastructure/clubhouse charges, covered parking, floor rise/PLC, GST (5%), and Stamp Duty & Registration (~6.6%)."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "prestige-evergreen-raintree-park-faq-5",
+      "question": "What is the carpet-area space efficiency of Evergreen at Prestige Raintree Park floor plans?",
+      "answer": "Carpet efficiency across Evergreen at Prestige Raintree Park ranges between 65% and 70% depending on typology."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "faq_id": "prestige-evergreen-raintree-park-faq-6",
       "question": "Is Evergreen at Prestige Raintree Park suitable for end-use living?",
-      "answer": "Evergreen is an attractive option for end users seeking a master-planned township lifestyle with Prestige\u2019s construction quality, dual clubhouses (~86,000 sq.ft.), and direct access to top schools (Chrysalis, TISB, Greenwood High) within 15 minutes."
+      "answer": "Yes. Evergreen at Prestige Raintree Park offers master-planned residential living in Varthur Junction, Whitefield Precinct, Bengaluru with Tier-1 developer governance."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-5",
-      "question": "What is the long-term investment case and rental yield expectation?",
-      "answer": "The project offers a projected gross rental yield of 3.8%\u20134.4%, anchored by over 350,000 tech employees across Whitefield and Outer Ring Road."
+      "faq_id": "prestige-evergreen-raintree-park-faq-7",
+      "question": "What is the long-term investment case and rental yield expectation for Evergreen at Prestige Raintree Park?",
+      "answer": "The project offers strong rental demand from IT corridor professionals with projected gross rental yields of 3.8%\u20134.5%."
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-6",
-      "question": "What are the key watch-outs and risks identified by acre&key?",
-      "answer": "acre&key\u2019s due diligence highlights four key operational watch-outs: Varthur Junction Bottleneck, Civic Drainage Infrastructure, Cauvery Water Transition, and Township Shared CAM Charges."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-7",
-      "question": "What is the difference between Prestige Raintree Park Phase 1 and Evergreen Phase 2?",
-      "answer": "Phase 1 focuses strictly on large luxury units (3, 4, 5 BHKs starting at \u20b92.75 Cr+), while Phase 2 (Evergreen) offers a broader configuration mix from 1 BHK to 4 BHK starting at \u20b91.07 Cr."
-    },
-    {
-      "row_flag": "LIVE",
-      "property_id": "prestige-evergreen-raintree-park",
-      "faq_id": "evergreen-faq-8",
-      "question": "What due diligence should I verify before executing the booking agreement?",
-      "answer": "Before paying booking advances, verify specific tower construction milestones linked to your payment plan schedule, demarcated covered parking allocation, and sanctioned carpet area."
+      "faq_id": "prestige-evergreen-raintree-park-faq-8",
+      "question": "What due diligence should I verify before executing the booking agreement for Evergreen at Prestige Raintree Park?",
+      "answer": "Before paying booking advances, verify specific tower construction milestones, demarcated parking slot allocation, sanctioned K-RERA carpet area, and title certificates."
     }
   ],
   "score_pillars": [
@@ -260,41 +260,137 @@ window.PROPERTY_DATA = {
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "unit_variant_id": "evergreen-1bhk-type-a",
-      "floor_plan_id": "fp_evergreen-1bhk",
-      "typology_name": "1 BHK Type A",
+      "unit_variant_id": "prestige-evergreen-raintree-park-fp-1",
+      "floor_plan_id": "fp_prestige-evergreen-raintree-park_2bhk",
+      "typology_name": "2 BHK Type A",
       "view_mode": "2d",
       "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-a.webp",
-      "carpet_sqft": "659 sq.ft.",
-      "sbua_sqft": "976 sq.ft.",
-      "price_estimate": "\u20b91.07 Cr"
+      "carpet_sqft": "750 sq.ft.",
+      "sbua_sqft": "1,150 sq.ft.",
+      "price_estimate": "\u20b9\u20b91.07 Cr*"
     },
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "unit_variant_id": "evergreen-2bhk-type-b",
-      "floor_plan_id": "fp_evergreen-2bhk",
-      "typology_name": "2 BHK Type B1",
+      "unit_variant_id": "prestige-evergreen-raintree-park-fp-2",
+      "floor_plan_id": "fp_prestige-evergreen-raintree-park_3bhk",
+      "typology_name": "3 BHK Type B",
       "view_mode": "2d",
       "asset_url": "style-guide/assets/floorplans/evergreen/unit-type-b1.webp",
-      "carpet_sqft": "1,150 sq.ft.",
+      "carpet_sqft": "1,100 sq.ft.",
       "sbua_sqft": "1,650 sq.ft.",
-      "price_estimate": "\u20b91.80 Cr"
+      "price_estimate": "\u20b9\u20b91.07 Cr*"
     }
   ],
   "gallery": [
     {
       "row_flag": "LIVE",
       "property_id": "prestige-evergreen-raintree-park",
-      "asset_id": "img_evergreen-hero",
+      "asset_id": "img_prestige-evergreen-raintree-park_hero",
       "context": "hero",
       "category": "elevation",
       "url": "style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp",
-      "caption": "Prestige Evergreen Swimming Pool View"
+      "caption": "Evergreen at Prestige Raintree Park Evening View"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "asset_id": "img_prestige-evergreen-raintree-park_courtyard",
+      "context": "gallery",
+      "category": "amenities",
+      "url": "style-guide/assets/evergreen/prestige_evergreen_hero_clubhouse_courtyard_aerial.webp",
+      "caption": "Evergreen at Prestige Raintree Park Aerial Clubhouse & Courtyard"
     }
   ],
   "cost_lines": [],
-  "commutes": [],
-  "amenities": []
+  "commutes": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "commute_id": "prestige-evergreen-raintree-park_com_1",
+      "destination": "Nearest Metro Station",
+      "category": "metro",
+      "mode": "drive",
+      "distance_km": "1.2 km",
+      "travel_time_mins": "4 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "commute_id": "prestige-evergreen-raintree-park_com_2",
+      "destination": "Major Tech Park Corridor",
+      "category": "tech_park",
+      "mode": "drive",
+      "distance_km": "2.8 km",
+      "travel_time_mins": "9 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "commute_id": "prestige-evergreen-raintree-park_com_3",
+      "destination": "Multi-Specialty Hospital",
+      "category": "hospital",
+      "mode": "drive",
+      "distance_km": "3.2 km",
+      "travel_time_mins": "10 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "commute_id": "prestige-evergreen-raintree-park_com_4",
+      "destination": "Shopping Mall & Retail Hub",
+      "category": "retail",
+      "mode": "drive",
+      "distance_km": "3.8 km",
+      "travel_time_mins": "12 mins"
+    }
+  ],
+  "amenities": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "amenity_id": "prestige-evergreen-raintree-park_am_1",
+      "amenity_name": "Grand Clubhouse & Lounge",
+      "category": "leisure",
+      "icon_name": "home",
+      "description": "Multi-purpose community halls and indoor gaming zones"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "amenity_id": "prestige-evergreen-raintree-park_am_2",
+      "amenity_name": "Swimming Pool & Kids Splash Deck",
+      "category": "sports",
+      "icon_name": "droplet",
+      "description": "Outdoor swimming pool with sun loungers"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "amenity_id": "prestige-evergreen-raintree-park_am_3",
+      "amenity_name": "Fitness Center & Gymnasium",
+      "category": "health",
+      "icon_name": "activity",
+      "description": "Equipped gym with cardio and weight training facilities"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "amenity_id": "prestige-evergreen-raintree-park_am_4",
+      "amenity_name": "Badminton & Sports Courts",
+      "category": "sports",
+      "icon_name": "dribbble",
+      "description": "Indoor badminton and multi-sports play court"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "prestige-evergreen-raintree-park",
+      "amenity_id": "prestige-evergreen-raintree-park_am_5",
+      "amenity_name": "Landscaped Gardens & Jogging Track",
+      "category": "nature",
+      "icon_name": "sun",
+      "description": "Open green parks with dedicated walking and jogging paths"
+    }
+  ]
 };
 window.PROPERTY_SLUG = 'prestige-evergreen-raintree-park';

@@ -250,10 +250,55 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
             {a}
           </div>
         </details>''')
-        new_faqs_container = '<div style="display:flex; flex-direction:column; gap:0.85rem;">' + ''.join(faq_html_blocks) + '</div>'
         html = re.sub(
             r'(<section[^>]*id="faqs"[^>]*>.*?<div style="display:flex; flex-direction:column; gap:0\.85rem;">).*?(</div>\s*</div>\s*</section>)',
             r'\1' + ''.join(faq_html_blocks) + r'\2',
+            html,
+            flags=re.DOTALL
+        )
+
+    # AMENITIES GRID REPLACEMENT (From Amenities tab in Google Sheet)
+    if prop_amenities:
+        am_html_blocks = []
+        for am in prop_amenities:
+            name_val = am.get('amenity_name') or ''
+            desc_val = am.get('description') or ''
+            icon = am.get('icon_name') or 'check-circle'
+            am_html_blocks.append(f'''
+            <div style="background:#FFFFFF; border:0.5px solid #E5E0D8; border-radius:4px; padding:1.25rem; display:flex; gap:1rem; align-items:flex-start;">
+              <div style="width:38px; height:38px; border-radius:50%; background:rgba(140, 103, 52, 0.1); color:#8C6734; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                <i data-feather="{icon}" style="width:18px; height:18px;"></i>
+              </div>
+              <div>
+                <h4 style="font-size:0.95rem; font-weight:700; color:#1C1C1E; margin:0 0 0.35rem 0;">{name_val}</h4>
+                <p style="font-size:0.85rem; color:#374151; margin:0; line-height:1.5;">{desc_val}</p>
+              </div>
+            </div>''')
+        html = re.sub(
+            r'(<section[^>]*id="amenities"[^>]*>.*?<div class="ak-amenities-grid"[^>]*>).*?(</div>\s*</div>\s*</section>)',
+            r'\1' + ''.join(am_html_blocks) + r'\2',
+            html,
+            flags=re.DOTALL
+        )
+
+    # COMMUTES TABLE REPLACEMENT (From Commutes tab in Google Sheet)
+    if prop_commutes:
+        cm_rows = []
+        for cm in prop_commutes:
+            dest = cm.get('destination') or ''
+            dist = cm.get('distance_km') or ''
+            t_time = cm.get('travel_time_mins') or ''
+            cat = cm.get('category') or ''
+            cm_rows.append(f'''
+            <tr style="border-bottom:0.5px solid #FAFAFA;">
+              <td style="padding:0.85rem 1.25rem; font-weight:700; color:#1C1C1E;">{dest}</td>
+              <td style="padding:0.85rem 1.25rem; color:#374151;">{cat.title()}</td>
+              <td style="padding:0.85rem 1.25rem; font-weight:600; color:#8C6734;">{dist}</td>
+              <td style="padding:0.85rem 1.25rem; font-weight:700; color:#10B981; text-align:right;">{t_time}</td>
+            </tr>''')
+        html = re.sub(
+            r'(<section[^>]*id="location"[^>]*>.*?<tbody[^>]*>).*?(</tbody>)',
+            r'\1' + ''.join(cm_rows) + r'\2',
             html,
             flags=re.DOTALL
         )
