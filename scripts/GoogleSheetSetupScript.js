@@ -119,5 +119,36 @@ function setupAcreNKeySheet() {
   ];
   amSheet.getRange(1, 1, amData.length, amData[0].length).setValues(amData);
 
-  SpreadsheetApp.getUi().alert('Success! All missing Google Sheet tabs (Reviewers_Advisors, Floor_Plans, Gallery, Cost_Lines, Commutes, Amenities) have been created and populated.');
+  // 7. Setup FAQs Tab (Full 8 FAQs for properties)
+  let faqSheet = ss.getSheetByName('FAQs');
+  if (!faqSheet) {
+    faqSheet = ss.insertSheet('FAQs');
+    Logger.log('Created FAQs tab.');
+  } else {
+    faqSheet.clear();
+  }
+
+  const faqData = [
+    ['row_flag', 'property_id', 'faq_id', 'question', 'answer'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-1', 'What is the starting price of Alembic Cloud Forest at Alembic City?', 'The starting price for residences at Alembic Cloud Forest at Alembic City is ₹2.20 Cr*.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-2', 'What is the RERA registration number of Alembic Cloud Forest at Alembic City?', 'The RERA registration number for Alembic Cloud Forest at Alembic City is PRM/KA/RERA/1251/446/PR/250625/007869 | Target Completion: 1 October 2029.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-3', 'When is the possession date for Alembic Cloud Forest at Alembic City?', 'The target possession date for Alembic Cloud Forest at Alembic City is 1 October 2029.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-4', 'What is the total acquisition cost of buying an Alembic Cloud Forest at Alembic City apartment?', 'The advertised base price starting from ₹2.20 Cr* is one component. Buyers must account for infrastructure/clubhouse charges, covered parking bays, floor rise/PLC, GST at 5%, and Karnataka Stamp Duty & Registration at 6.6%.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-5', 'What is the carpet-area space efficiency of Alembic Cloud Forest at Alembic City floor plans?', 'Carpet efficiency across Alembic Cloud Forest ranges between 65.2% and 66.6%. The 2 BHK unit (1,150 sq.ft. SBUA) offers ~750 sq.ft. carpet area, while the 3 BHK unit (1,650 sq.ft. SBUA) offers ~1,100 sq.ft. carpet area.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-6', 'Is Alembic Cloud Forest at Alembic City suitable for end-use living?', 'Yes. Alembic Cloud Forest is ideal for families seeking an institutional 24-acre township lifestyle with >70% open green spaces, 3 towers, and fast connectivity to Kadugodi Metro (0.8 km) and ITPL Whitefield (2.5 km).'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-7', 'What is the long-term investment case and rental yield expectation?', 'The project offers strong rental demand from over 350,000 tech employees across Whitefield and ITPL corridors. Capital growth is backed by Tier-1 Alembic balance-sheet execution.'],
+    ['LIVE', 'alembic-cloud-forest-alembic-city', 'alembic-faq-8', 'What due diligence should I verify before executing the booking agreement?', 'Before paying booking advances, verify specific tower construction milestones linked to your payment schedule, demarcated parking slot allocation, sanctioned K-RERA carpet area, and legal title certificates.'],
+    
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-1', 'Is Evergreen at Prestige Raintree Park RERA registered?', 'Yes. Evergreen @ Prestige Raintree Park is registered under Karnataka RERA with registration number PRM/KA/RERA/1251/446/PR/010126/008374, with a completion target of 30 June 2030.'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-2', 'What is the total acquisition cost of buying in Evergreen at Prestige Raintree Park?', 'While base rates range from ₹15,500 to ₹16,300/sq.ft., all-inclusive on-road acquisition costs range from approximately ₹1.07 Cr for 1 BHK up to ₹4.09 Cr+ for 4 BHK, factoring in floor rise, PLC, parking, infrastructure, GST (5%), and stamp duty/registration (~6.6%).'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-3', 'What is the carpet-area space efficiency of Evergreen floor plans?', 'Carpet efficiency across Evergreen ranges between 66.5% and 69.8% depending on typology. The 1 BHK unit (976 sq.ft. SBA) offers ~659 sq.ft. RERA carpet (67.5% efficiency).'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-4', 'Is Evergreen at Prestige Raintree Park suitable for end-use living?', 'Evergreen is an attractive option for end users seeking a master-planned township lifestyle with Prestige’s construction quality, dual clubhouses (~86,000 sq.ft.), and direct access to top schools (Chrysalis, TISB, Greenwood High) within 15 minutes.'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-5', 'What is the long-term investment case and rental yield expectation?', 'The project offers a projected gross rental yield of 3.8%–4.4%, anchored by over 350,000 tech employees across Whitefield and Outer Ring Road.'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-6', 'What are the key watch-outs and risks identified by acre&key?', 'acre&key’s due diligence highlights four key operational watch-outs: Varthur Junction Bottleneck, Civic Drainage Infrastructure, Cauvery Water Transition, and Township Shared CAM Charges.'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-7', 'What is the difference between Prestige Raintree Park Phase 1 and Evergreen Phase 2?', 'Phase 1 focuses strictly on large luxury units (3, 4, 5 BHKs starting at ₹2.75 Cr+), while Phase 2 (Evergreen) offers a broader configuration mix from 1 BHK to 4 BHK starting at ₹1.07 Cr.'],
+    ['LIVE', 'prestige-evergreen-raintree-park', 'evergreen-faq-8', 'What due diligence should I verify before executing the booking agreement?', 'Before paying booking advances, verify specific tower construction milestones linked to your payment plan schedule, demarcated covered parking allocation, and sanctioned carpet area.']
+  ];
+  faqSheet.getRange(1, 1, faqData.length, faqData[0].length).setValues(faqData);
+
+  SpreadsheetApp.getUi().alert('Success! All missing Google Sheet tabs (Reviewers_Advisors, Floor_Plans, Gallery, Cost_Lines, Commutes, Amenities, FAQs) have been created and populated with 100% complete data.');
 }

@@ -233,6 +233,31 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
             flags=re.DOTALL
         )
 
+    # FAQS ACCORDION REPLACEMENT (From FAQs tab in Google Sheet)
+    if prop_faqs:
+        faq_html_blocks = []
+        for f_item in prop_faqs:
+            q = f_item.get('question') or ''
+            a = f_item.get('answer') or ''
+            if not q: continue
+            faq_html_blocks.append(f'''
+        <details style="background:#FFFFFF; border:0.5px solid #E5E0D8; border-radius: 4px; padding:1.15rem 1.35rem; transition:all 0.2s ease;">
+          <summary style="font-weight:700; color:#1C1C1E; font-size:0.98rem; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            <span>{q}</span>
+            <span style="color:#8C6734; font-size:1.2rem; font-weight:300;">+</span>
+          </summary>
+          <div style="font-size:0.88rem; color:#374151; margin-top:0.65rem; line-height:1.65; border-top:0.5px solid rgba(140, 103, 52,0.15); padding-top:0.65rem;">
+            {a}
+          </div>
+        </details>''')
+        new_faqs_container = '<div style="display:flex; flex-direction:column; gap:0.85rem;">' + ''.join(faq_html_blocks) + '</div>'
+        html = re.sub(
+            r'(<section[^>]*id="faqs"[^>]*>.*?<div style="display:flex; flex-direction:column; gap:0\.85rem;">).*?(</div>\s*</div>\s*</section>)',
+            r'\1' + ''.join(faq_html_blocks) + r'\2',
+            html,
+            flags=re.DOTALL
+        )
+
     with open(os.path.join(prop_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html)
 
