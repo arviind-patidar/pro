@@ -132,11 +132,31 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     if 'sheet-sync.js' not in html:
         html = html.replace('</head>', '<script src="../../style-guide/assets/js/sheet-sync.js" defer></script>\n</head>')
 
+    # Developer Lookup from Developers tab
+    dev_name = 'Developer'
+    if devs:
+        dev_id = prop.get('developer_id') or ''
+        matching_dev = next((d for d in devs if d.get('developer_id') == dev_id), None)
+        if matching_dev:
+            dev_name = matching_dev.get('display_name') or matching_dev.get('legal_entity_name') or dev_name
+
     # Standard Title & Location replacements
     html = html.replace('Prestige Evergreen in Varthur, Bangalore', f'{display_name} in {location_label}')
     html = html.replace('Evergreen at Prestige Raintree Park', display_name)
     html = html.replace('Prestige Evergreen', display_name)
-    html = html.replace('Varthur Junction, Bengaluru', location_label)
+    html = html.replace('Varthur Junction, Whitefield Precinct, Bengaluru', location_label)
+
+    # Hero badge text top-left tag
+    if hero_badge_text:
+        html = html.replace('PRESTIGE RAINTREE PARK · EVERGREEN', hero_badge_text.upper())
+
+    # Developer replacement if not Prestige Group
+    if dev_name and dev_name != 'Prestige Group':
+        html = html.replace('by Prestige Group', f'by {dev_name}')
+        html = html.replace('Prestige Group', dev_name)
+        html = html.replace('Prestige balance sheet', f'{dev_name} balance sheet')
+        html = html.replace('Prestige’s construction', f"{dev_name}'s construction")
+        html = html.replace('Prestige brand', f'{dev_name} brand')
 
     # Global Score Replacement (Replace 4.11 with property score everywhere)
     if diligence_score and diligence_score != '4.11':
@@ -152,10 +172,38 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     # PSF Rate replacement
     if psf_rate:
         html = re.sub(r'₹16\.2\s*K\s*–\s*16\.3\s*K/sq\.ft\*', psf_rate, html)
+        html = html.replace('₹16.2K–16.3K/sq.ft. indicative all-inclusive pricing', f'{psf_rate} indicative base pricing')
 
-    # Verdict summary replacement
+    # Verdict summary & Tagline in Assessment Box
     if verdict_summary:
         html = html.replace('A Strong Township Bet', verdict_summary)
+        html = re.sub(
+            r'<div style="font-family:\'Marcellus\', serif; font-size: 1\.18rem; font-weight: 400; color:#1C1C1E; line-height:1\.2; margin-bottom:0\.2rem;">.*?</div>',
+            f'<div style="font-family:\'Marcellus\', serif; font-size: 1.18rem; font-weight: 400; color:#1C1C1E; line-height:1.2; margin-bottom:0.2rem;">{verdict_summary}</div>',
+            html
+        )
+
+    if hero_tagline or about_lead:
+        sub_text = hero_tagline or about_lead
+        html = re.sub(
+            r'<div style="font-size:0\.82rem; color:#374151; line-height:1\.35; font-weight:500;">A large Prestige township proposition.*?</div>',
+            f'<div style="font-size:0.82rem; color:#374151; line-height:1.35; font-weight:500;">{sub_text}</div>',
+            html
+        )
+
+    # Hero Highlights (✓) & Due Diligence (⚠) Box
+    strengths = [pt for pt in prop_points if pt.get('kind') in ('strength', 'highlight')]
+    watches = [pt for pt in prop_points if pt.get('kind') in ('watch', 'watchout')]
+    if strengths or watches:
+        hl_html_parts = []
+        for s in strengths:
+            t = s.get('title') or ''
+            hl_html_parts.append(f'<div style="display:flex; align-items:center; gap:0.35rem; color:#1C1C1E;"><span style="color:#1C1C1E; font-weight:800;">✓</span> <span><strong>{t}</strong></span></div>')
+        for w in watches:
+            t = w.get('title') or ''
+            hl_html_parts.append(f'<div style="display:flex; align-items:center; gap:0.35rem; color:#8C6734;"><span style="color:#8C6734; font-weight:800;">⚠</span> <span><strong>{t}</strong></span></div>')
+        new_hl_box = '<div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.8rem; font-weight:700; color:#374151; background:#FAFAFA; border: 0.5px solid rgba(10, 10, 11, 0.08); border-radius: 4px; padding:0.75rem 0.85rem;">' + ''.join(hl_html_parts) + '</div>'
+        html = re.sub(r'<div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.8rem; font-weight:700; color:#374151; background:#FAFAFA;.*?</div>\s*</div>', new_hl_box + '\n      </div>', html, flags=re.DOTALL)
 
     # RERA & Completion replacements
     if rera_id:
@@ -165,6 +213,23 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         html = re.sub(r'30\s+June\s+2030', possession_date, html)
         html = re.sub(r'June\s+2030', possession_date, html)
         html = re.sub(r'(?:30\s+){2,}', '', html)
+
+    # Precision cleanups for non-Prestige properties
+    if dev_name and dev_name != 'Prestige Group':
+        html = html.replace('Prestige Tech Forest', 'Whitefield IT Parks')
+        html = html.replace('Prestige Quarterly Investor Presentation', f'{dev_name} Investor Presentation')
+        html = html.replace('within the 107-acre Prestige Raintree Park integrated township', f'within {location_label}')
+        html = html.replace('Understanding how Evergreen fits within the larger 107-acre Prestige Raintree Park master plan and selecting the optimal tower location', f'Understanding how {display_name} fits within {location_label}')
+        html = re.sub(r'How does .*? relate to the overall Prestige Raintree Park township\?', f'What is the master plan and location advantage of {display_name}?', html)
+        html = html.replace('Evergreen @ Prestige Raintree Park', display_name)
+        html = html.replace('Evergreen is an attractive option for end users seeking a master-planned township lifestyle with Prestige’s construction', f'{display_name} is an attractive option for end users seeking a master-planned lifestyle with {dev_name}\'s construction')
+
+    if verdict_summary:
+        html = re.sub(
+            r'"reviewBody":\s*"A large Prestige township proposition.*?"',
+            f'"reviewBody": "{verdict_summary}"',
+            html
+        )
 
     # At-a-Glance Strip replacement (5 stats from Glance_Stats tab)
     if prop_glance:
