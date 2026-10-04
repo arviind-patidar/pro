@@ -114,6 +114,54 @@ window.PROPERTY_DATA = {
       "kind": "watch",
       "title": "Peak Hour Traffic Management",
       "body": "Feeder road widening projects are under construction; peak-hour commute buffer advised during IT traffic hours."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-p1",
+      "kind": "overview_p1",
+      "title": "Overview Intro",
+      "body": "Planned across 3 Towers (Primary Table), the development balances premium high-rise architecture with expansive open spaces, dedicated lifestyle amenities, and shared township infrastructure."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-item-1",
+      "kind": "overview_item",
+      "title": "Residential",
+      "body": "multiple apartment configurations and layouts."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-item-2",
+      "kind": "overview_item",
+      "title": "Open Spaces",
+      "body": "approximately >70% reported open area."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-item-3",
+      "kind": "overview_item",
+      "title": "Amenities",
+      "body": "clubhouse of approximately ~2,200 sq.ft. / 100 Homes."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-item-4",
+      "kind": "overview_item",
+      "title": "Masterplan",
+      "body": "towers, common spaces, internal movement and shared facilities planned as one residential environment."
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "alembic-cloud-forest-alembic-city",
+      "point_id": "alembic-ov-p3",
+      "kind": "overview_p3",
+      "title": "Overview Outro",
+      "body": "The scale of the development makes the masterplan and execution an important part of understanding the project."
     }
   ],
   "faqs": [
