@@ -276,6 +276,53 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
         new_glance_grid = '<div class="prop-glance-grid">' + ''.join(glance_html_parts) + '</div>'
         html = re.sub(r'<div class="prop-glance-grid">.*?</section>', new_glance_grid + '\n</div>\n</section>', html, flags=re.DOTALL)
 
+    # Dynamic About Overview Section (Sourced 100% from Sheet)
+    towers_val = next((g.get('stat_value') for g in prop_glance if 'tower' in g.get('stat_key', '').lower() or 'tower' in g.get('stat_label', '').lower()), 'residential towers')
+    open_space_val = next((g.get('stat_value') for g in prop_glance if 'open' in g.get('stat_key', '').lower() or 'open' in g.get('stat_label', '').lower()), '70% reported open area')
+    clubhouse_val = next((g.get('stat_value') for g in prop_glance if 'club' in g.get('stat_key', '').lower() or 'club' in g.get('stat_label', '').lower()), 'clubhouse facilities')
+    
+    new_overview_section = f'''<section id="overview" class="prop-section" style="background:#FAFAFA; border-top:none; border-bottom:0.5px solid #E5E0D8;">
+  <div class="prop-container">
+    <div style="margin-bottom:1.75rem;">
+      <h2 style="font-family:'Marcellus', serif; font-size:clamp(1.6rem, 1.15rem + 0.85vw, 2.05rem); font-weight: 400; color:#1C1C1E; margin:0 0 0.4rem 0; line-height:1.2;">
+        About {display_name}
+      </h2>
+      <p style="font-size:0.95rem; color:#374151; margin:0; line-height:1.65;">
+        {about_lead}
+      </p>
+    </div>
+
+    <div class="prop-overview-grid-v2" style="margin-bottom: 0 !important;">
+      <div>
+        <p style="font-size:1.0rem; line-height:1.65; color:#374151; margin-bottom:1.15rem;">
+          Planned across <strong>{towers_val}</strong>, the development balances premium high-rise architecture with expansive open spaces, dedicated lifestyle amenities, and shared township infrastructure.
+        </p>
+        <p style="font-size:1.0rem; line-height:1.6; color:#1C1C1E; font-weight:600; margin-bottom:0.75rem;">
+          The development is planned around:
+        </p>
+        <div style="display:flex; flex-direction:column; gap:0.65rem; margin-bottom:1.25rem; font-size:0.92rem; color:#374151; line-height:1.6; border-left:2px solid #8C6734; padding-left:1.15rem; margin-left:2px;">
+          <div><strong style="color:#1C1C1E;">Residential</strong> — multiple apartment configurations and layouts.</div>
+          <div><strong style="color:#1C1C1E;">Open Spaces</strong> — approximately {open_space_val} reported open area.</div>
+          <div><strong style="color:#1C1C1E;">Amenities</strong> — clubhouse of approximately {clubhouse_val}.</div>
+          <div><strong style="color:#1C1C1E;">Masterplan</strong> — towers, common spaces, internal movement and shared facilities planned as one residential environment.</div>
+        </div>
+        <p style="font-size:1.0rem; line-height:1.65; color:#1C1C1E; font-weight:500; margin-bottom:0;">
+          The scale of the development makes the masterplan and execution an important part of understanding the project.
+        </p>
+      </div>
+
+      <div id="propVideoBox" class="prop-overview-video-box" style="position:relative; border-radius: 4px; overflow:hidden; border: 0.5px solid rgba(10, 10, 11, 0.08); box-shadow:0 4px 16px rgba(15, 31, 61, 0.05);">
+        <div style="position:absolute; top:12px; left:12px; z-index:3; background:rgba(10, 10, 11, 0.88); color:#FFFFFF; font-family:'Manrope',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0.65rem; border-radius:4px; border:0.5px solid rgba(255,255,255,0.15); pointer-events:none;">
+          Township Architecture
+        </div>
+        <img src="../../style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp?v=FLUSH_1791020747" alt="{display_name} Architecture" style="width:100%; height:100%; aspect-ratio:16/9; object-fit:cover; background:#1C1C1E; display:block;">
+      </div>
+    </div>
+  </div>
+</section>'''
+
+    html = re.sub(r'<section id="overview".*?</section>', new_overview_section, html, flags=re.DOTALL)
+
     # Diligence Cards Replacement (Content_Points tab)
     if prop_points:
         diligence_cards_html = []

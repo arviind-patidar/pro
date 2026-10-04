@@ -96,8 +96,8 @@ window.PROPERTY_DATA = {
       "property_id": "alembic-cloud-forest-alembic-city",
       "point_id": "alembic-cloud-forest-alembic-city-strength-1",
       "kind": "strength",
-      "title": "Institutional Developer Backing (Alembic)",
-      "body": "Backed by Alembic, ensuring high execution capability, clear legal titles, and strong resale demand."
+      "title": "Institutional Developer Backing (Alembic) - Test",
+      "body": "Backed by Alembic, ensuring high execution capability, clear legal titles, and strong resale demand. - Test"
     },
     {
       "row_flag": "LIVE",
