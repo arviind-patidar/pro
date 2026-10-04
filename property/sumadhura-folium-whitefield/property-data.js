@@ -255,7 +255,48 @@ window.PROPERTY_DATA = {
     }
   ],
   "cost_lines": [],
-  "commutes": [],
+  "commutes": [
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "commute_id": "sumadhura-folium-whitefield_com_1",
+      "destination": "Nearest Metro Station",
+      "category": "metro",
+      "mode": "drive",
+      "distance_km": "1.2 km",
+      "travel_time_mins": "4 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "commute_id": "sumadhura-folium-whitefield_com_2",
+      "destination": "Major Tech Park Corridor",
+      "category": "tech_park",
+      "mode": "drive",
+      "distance_km": "2.8 km",
+      "travel_time_mins": "9 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "commute_id": "sumadhura-folium-whitefield_com_3",
+      "destination": "Multi-Specialty Hospital",
+      "category": "hospital",
+      "mode": "drive",
+      "distance_km": "3.2 km",
+      "travel_time_mins": "10 mins"
+    },
+    {
+      "row_flag": "LIVE",
+      "property_id": "sumadhura-folium-whitefield",
+      "commute_id": "sumadhura-folium-whitefield_com_4",
+      "destination": "Shopping Mall & Retail Hub",
+      "category": "retail",
+      "mode": "drive",
+      "distance_km": "3.8 km",
+      "travel_time_mins": "12 mins"
+    }
+  ],
   "amenities": [
     {
       "row_flag": "LIVE",

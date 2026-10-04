@@ -48,9 +48,10 @@ def load_base_template():
     template_path = os.path.join(WORKSPACE_DIR, 'property', 'prestige-evergreen-raintree-park', 'index.html')
     with open(template_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    # Clean any accumulated duplicate prefixes in base template
+    # Clean any accumulated duplicate prefixes or blocks in base template
     content = re.sub(r'(?:30\s+)+', '30 ', content)
     content = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)+', '', content)
+    content = re.sub(r'<div class="ak-info-insight".*?(?=\s*<div class="prop-snapshot-strip-v2")', '<!-- AK_INFO_INSIGHT_PLACEHOLDER -->\n\n', content, flags=re.DOTALL)
     return content
 
 def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, reviewers, floor_plans, gallery, cost_lines, commutes, amenities, template_html):
@@ -166,6 +167,7 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     price_display_str = min_price if 'Cr' in str(min_price) else f'₹{min_price} Lakhs*'
     if min_price and max_price and max_price != min_price:
         price_display_str = f'₹{min_price} – {max_price}' if not str(min_price).startswith('₹') else f'{min_price} – {max_price}'
+    html = html.replace('PRICE_RANGE_PLACEHOLDER', price_display_str)
     html = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)*₹1\.07\s*–\s*4\.09\s*Cr', price_display_str, html)
     html = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)+', '', html)
 
@@ -191,24 +193,57 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
             html
         )
 
-    # Hero Highlights (✓) & Due Diligence (⚠) Box
+    # Hero Highlights (✓) & Due Diligence (⚠) Box (ak-info-insight & mobile)
     strengths = [pt for pt in prop_points if pt.get('kind') in ('strength', 'highlight')]
     watches = [pt for pt in prop_points if pt.get('kind') in ('watch', 'watchout')]
-    if strengths or watches:
-        hl_html_parts = []
-        for s in strengths:
-            t = s.get('title') or ''
-            hl_html_parts.append(f'<div style="display:flex; align-items:center; gap:0.35rem; color:#1C1C1E;"><span style="color:#1C1C1E; font-weight:800;">✓</span> <span><strong>{t}</strong></span></div>')
-        for w in watches:
-            t = w.get('title') or ''
-            hl_html_parts.append(f'<div style="display:flex; align-items:center; gap:0.35rem; color:#8C6734;"><span style="color:#8C6734; font-weight:800;">⚠</span> <span><strong>{t}</strong></span></div>')
-        new_hl_box = '<div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.8rem; font-weight:700; color:#374151; background:#FAFAFA; border: 0.5px solid rgba(10, 10, 11, 0.08); border-radius: 4px; padding:0.75rem 0.85rem;">' + ''.join(hl_html_parts) + '</div>'
-        html = re.sub(r'<div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.8rem; font-weight:700; color:#374151; background:#FAFAFA;.*?</div>\s*</div>', new_hl_box + '\n      </div>', html, flags=re.DOTALL)
+    
+    col1_items = []
+    for s in strengths:
+        t = s.get('title') or ''
+        col1_items.append(f'''
+          <div style="display:flex; align-items:flex-start; gap:0.4rem;">
+            <span style="display:inline-block; width:4px; height:4px; border-radius:50%; background:#1C1C1E; margin-top:5px; flex-shrink:0;"></span>
+            <span><strong>{t}</strong></span>
+          </div>''')
+
+    col2_items = []
+    for w in watches:
+        t = w.get('title') or ''
+        col2_items.append(f'''
+          <div style="display:flex; align-items:flex-start; gap:0.4rem;">
+            <span style="display:inline-block; width:4px; height:4px; border-radius:50%; background: linear-gradient(135deg, #be7555 0%, #9f5334 100%); margin-top:5px; flex-shrink:0;"></span>
+            <span><strong>{t}</strong></span>
+          </div>''')
+
+    if col1_items or col2_items:
+        col1_html = ''.join(col1_items) if col1_items else '<div><span><strong>Verified Project Diligence</strong></span></div>'
+        col2_html = ''.join(col2_items) if col2_items else '<div><span><strong>Location & RERA Diligence</strong></span></div>'
+        
+        new_insight_box = f'''<div class="ak-info-insight" style="background:#FAFAFA; border-radius: 4px; padding:0.6rem 0.85rem; margin-bottom:0; border:0.5px solid rgba(213,209,200,0.7); box-shadow:none;">
+    <div class="ak-view-row" style="display:flex; align-items:stretch; gap:0.95rem;">
+      <div class="ak-view-col" style="flex:1; display:flex; flex-direction:column;">
+        <div style="font-family:'Marcellus', serif; font-size:0.66rem; font-weight: 400; letter-spacing:0.12em; color:#1C1C1E; text-transform:uppercase; margin-bottom:0.35rem; line-height:1;">Key Highlights</div>
+        <div style="display:flex; flex-direction:column; gap:0.32rem; font-family:'Manrope', sans-serif; font-size:0.74rem; color:#1C1C1E; line-height:1.35;">
+          {col1_html}
+        </div>
+      </div>
+      <div class="ak-view-divider" style="width:1px; background:rgba(213,209,200,0.65); flex-shrink:0; margin:0 0.1rem;"></div>
+      <div class="ak-view-col" style="flex:1; display:flex; flex-direction:column;">
+        <div style="font-family:'Marcellus', serif; font-size:0.66rem; font-weight: 400; letter-spacing:0.12em; color:#8C6734; text-transform:uppercase; margin-bottom:0.35rem; line-height:1;">Due Diligence</div>
+        <div style="display:flex; flex-direction:column; gap:0.32rem; font-family:'Manrope', sans-serif; font-size:0.74rem; color:#1C1C1E; line-height:1.35;">
+          {col2_html}
+        </div>
+      </div>
+    </div>
+  </div>'''
+        html = html.replace('<!-- AK_INFO_INSIGHT_PLACEHOLDER -->', new_insight_box)
+        html = re.sub(r'<div class="ak-info-insight".*?</div>\s*</div>\s*</div>(?:\s*<div class="ak-view-divider".*?</div>\s*</div>\s*</div>)*', new_insight_box, html, flags=re.DOTALL)
 
     # RERA & Completion replacements
     if rera_id:
         html = html.replace('PRM/KA/RERA/1251/446/PR/010126/008374', rera_id)
     if possession_date:
+        html = html.replace('POSSESSION_DATE_PLACEHOLDER', possession_date)
         html = re.sub(r'(?:30\s+)+(?:30\s+June\s+2030|1\s+October\s+2029|31\s+March\s+2031|Q4\s+2028|July\s+2032\s+–\s+Sept\s+2033|June\s+2030)', possession_date, html)
         html = re.sub(r'30\s+June\s+2030', possession_date, html)
         html = re.sub(r'June\s+2030', possession_date, html)
