@@ -281,6 +281,39 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     open_space_val = next((g.get('stat_value') for g in prop_glance if 'open' in g.get('stat_key', '').lower() or 'open' in g.get('stat_label', '').lower()), '70% reported open area')
     clubhouse_val = next((g.get('stat_value') for g in prop_glance if 'club' in g.get('stat_key', '').lower() or 'club' in g.get('stat_label', '').lower()), 'clubhouse facilities')
     
+    # 1. Overview Intro Paragraph
+    overview_intro_from_pt = next((pt.get('body') or pt.get('body_text') for pt in prop_points if pt.get('kind') in ('overview_intro', 'overview_p1')), None)
+    overview_intro = prop.get('overview_intro') or overview_intro_from_pt
+    if not overview_intro:
+        if towers_val:
+            overview_intro = f"Planned across <strong>{towers_val}</strong>, the development balances premium high-rise architecture with expansive open spaces, dedicated lifestyle amenities, and shared township infrastructure."
+        else:
+            overview_intro = "The development balances premium high-rise architecture with expansive open spaces, dedicated lifestyle amenities, and shared township infrastructure."
+    elif '<strong>' not in overview_intro and towers_val and towers_val in overview_intro:
+        overview_intro = overview_intro.replace(towers_val, f"<strong>{towers_val}</strong>")
+
+    # 2. Overview Heading
+    overview_heading = prop.get('overview_heading') or "The development is planned around:"
+
+    # 3. Overview Items (Content_Points tab)
+    overview_item_pts = [pt for pt in prop_points if pt.get('kind') in ('overview_item', 'overview_bullet', 'overview_pillar') or pt.get('section_name') == 'overview']
+    if overview_item_pts:
+        item_html_list = []
+        for item in overview_item_pts:
+            t = item.get('title') or ''
+            b = item.get('body') or item.get('body_text') or ''
+            item_html_list.append(f'<div><strong style="color:#1C1C1E;">{t}</strong> — {b}</div>')
+        overview_items_html = '\n          '.join(item_html_list)
+    else:
+        overview_items_html = f'''<div><strong style="color:#1C1C1E;">Residential</strong> — multiple apartment configurations and layouts.</div>
+          <div><strong style="color:#1C1C1E;">Open Spaces</strong> — approximately {open_space_val} reported open area.</div>
+          <div><strong style="color:#1C1C1E;">Amenities</strong> — clubhouse of approximately {clubhouse_val}.</div>
+          <div><strong style="color:#1C1C1E;">Masterplan</strong> — towers, common spaces, internal movement and shared facilities planned as one residential environment.</div>'''
+
+    # 4. Overview Outro Paragraph
+    overview_outro_from_pt = next((pt.get('body') or pt.get('body_text') for pt in prop_points if pt.get('kind') in ('overview_outro', 'overview_p3')), None)
+    overview_outro = prop.get('overview_outro') or overview_outro_from_pt or "The scale of the development makes the masterplan and execution an important part of understanding the project."
+
     new_overview_section = f'''<section id="overview" class="prop-section" style="background:#FAFAFA; border-top:none; border-bottom:0.5px solid #E5E0D8;">
   <div class="prop-container">
     <div style="margin-bottom:1.75rem;">
@@ -295,25 +328,22 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     <div class="prop-overview-grid-v2" style="margin-bottom: 0 !important;">
       <div>
         <p style="font-size:1.0rem; line-height:1.65; color:#374151; margin-bottom:1.15rem;">
-          Planned across <strong>{towers_val}</strong>, the development balances premium high-rise architecture with expansive open spaces, dedicated lifestyle amenities, and shared township infrastructure.
+          {overview_intro}
         </p>
         <p style="font-size:1.0rem; line-height:1.6; color:#1C1C1E; font-weight:600; margin-bottom:0.75rem;">
-          The development is planned around:
+          {overview_heading}
         </p>
         <div style="display:flex; flex-direction:column; gap:0.65rem; margin-bottom:1.25rem; font-size:0.92rem; color:#374151; line-height:1.6; border-left:2px solid #8C6734; padding-left:1.15rem; margin-left:2px;">
-          <div><strong style="color:#1C1C1E;">Residential</strong> — multiple apartment configurations and layouts.</div>
-          <div><strong style="color:#1C1C1E;">Open Spaces</strong> — approximately {open_space_val} reported open area.</div>
-          <div><strong style="color:#1C1C1E;">Amenities</strong> — clubhouse of approximately {clubhouse_val}.</div>
-          <div><strong style="color:#1C1C1E;">Masterplan</strong> — towers, common spaces, internal movement and shared facilities planned as one residential environment.</div>
+          {overview_items_html}
         </div>
         <p style="font-size:1.0rem; line-height:1.65; color:#1C1C1E; font-weight:500; margin-bottom:0;">
-          The scale of the development makes the masterplan and execution an important part of understanding the project.
+          {overview_outro}
         </p>
       </div>
 
       <div id="propVideoBox" class="prop-overview-video-box" style="position:relative; border-radius: 4px; overflow:hidden; border: 0.5px solid rgba(10, 10, 11, 0.08); box-shadow:0 4px 16px rgba(15, 31, 61, 0.05);">
         <div style="position:absolute; top:12px; left:12px; z-index:3; background:rgba(10, 10, 11, 0.88); color:#FFFFFF; font-family:'Manrope',sans-serif; font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0.65rem; border-radius:4px; border:0.5px solid rgba(255,255,255,0.15); pointer-events:none;">
-          Township Architecture
+          {hero_badge_text.upper()}
         </div>
         <img src="../../style-guide/assets/evergreen/prestige_evergreen_hero_pool_evening.webp?v=FLUSH_1791020747" alt="{display_name} Architecture" style="width:100%; height:100%; aspect-ratio:16/9; object-fit:cover; background:#1C1C1E; display:block;">
       </div>
