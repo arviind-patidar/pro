@@ -47,7 +47,11 @@ def fetch_tab(tab_name):
 def load_base_template():
     template_path = os.path.join(WORKSPACE_DIR, 'property', 'prestige-evergreen-raintree-park', 'index.html')
     with open(template_path, 'r', encoding='utf-8') as f:
-        return f.read()
+        content = f.read()
+    # Clean any accumulated duplicate prefixes in base template
+    content = re.sub(r'(?:30\s+)+', '30 ', content)
+    content = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)+', '', content)
+    return content
 
 def generate_property_page(prop, phases, configs, glance_stats, content_points, faqs, score_pillars, devs, reviewers, floor_plans, gallery, cost_lines, commutes, amenities, template_html):
     slug = prop.get('slug') or prop.get('property_id')
@@ -142,7 +146,8 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     price_display_str = min_price if 'Cr' in str(min_price) else f'₹{min_price} Lakhs*'
     if min_price and max_price and max_price != min_price:
         price_display_str = f'₹{min_price} – {max_price}' if not str(min_price).startswith('₹') else f'{min_price} – {max_price}'
-    html = re.sub(r'₹1\.07\s*–\s*4\.09\s*Cr', price_display_str, html)
+    html = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)*₹1\.07\s*–\s*4\.09\s*Cr', price_display_str, html)
+    html = re.sub(r'(?:₹1\.07\s*Cr\*\s*–\s*)+', '', html)
 
     # PSF Rate replacement
     if psf_rate:
@@ -156,8 +161,10 @@ def generate_property_page(prop, phases, configs, glance_stats, content_points, 
     if rera_id:
         html = html.replace('PRM/KA/RERA/1251/446/PR/010126/008374', rera_id)
     if possession_date:
+        html = re.sub(r'(?:30\s+)+(?:30\s+June\s+2030|1\s+October\s+2029|31\s+March\s+2031|Q4\s+2028|July\s+2032\s+–\s+Sept\s+2033|June\s+2030)', possession_date, html)
         html = re.sub(r'30\s+June\s+2030', possession_date, html)
         html = re.sub(r'June\s+2030', possession_date, html)
+        html = re.sub(r'(?:30\s+){2,}', '', html)
 
     # At-a-Glance Strip replacement (5 stats from Glance_Stats tab)
     if prop_glance:
